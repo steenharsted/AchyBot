@@ -1,0 +1,19 @@
+Package: myshinyapp
+Title: My Shiny App
+Version: 0.1.0
+Author: Steen Harsted <sharsted@health.sdu.dk>
+Description: A Shiny app that plays a chiro patient
+Depends: 
+    R (>= 3.5.0)
+Imports:
+    shiny (>= 1.7.0),
+    shinychat,
+    elmer,
+    bslib (>= 0.5.0),
+    future,
+    promises
+Remotes:
+    github::tidyverse/elmer@main,
+    github::jcheng5/shinychat@main
+Encoding: UTF-8
+
