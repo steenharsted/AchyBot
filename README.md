@@ -2,6 +2,10 @@
 
 **AchyBot** is a chatbot designed to simulate patients with musculoskeletal health issues. It serves as an educational tool for students, providing a realistic and interactive way to practice clinical reasoning, patient communication, and diagnostic skills in a safe learning environment.
 
+## Try AchyBot
+Simple first try
+https://fc0dvk-steen-harsted.shinyapps.io/shiny_chat/
+
 ## Features
 - Simulates various musculoskeletal conditions. TODO - now only simulates stenosis
 - Supports interactive question-and-answer scenarios.
