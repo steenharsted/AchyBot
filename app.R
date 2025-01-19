@@ -42,7 +42,7 @@ ui <- page_fluid(
 ))
 
 server <- function(input, output, session) {
-  chat <- elmer::chat_openai(
+  chat <- ellmer::chat_openai(
     model = "gpt-4o-mini",
     system_prompt = 
       "Du taler dansk. 

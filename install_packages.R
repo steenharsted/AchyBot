@@ -8,7 +8,7 @@ options(timeout = 300)
 
 # Try to install with more detailed error reporting
 tryCatch({
-  remotes::install_github("tidyverse/elmer", 
+  remotes::install_github("tidyverse/ellmer", 
                           force = TRUE, 
                           upgrade = "never",
                           quiet = FALSE,
