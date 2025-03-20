@@ -50,7 +50,7 @@ ui <- page_fluid(
       card_header("Vælg Prompter"),
       card_body(
         layout_column_wrap(
-          width = 1/3,
+          width = 1/4,
           selectInput("start_prompt", "Start Prompt:", 
                       choices = start_prompts, 
                       selected = start_prompts[1]),
@@ -59,7 +59,10 @@ ui <- page_fluid(
                       selected = person_prompts[1]),
           selectInput("diagnosis_prompt", "Diagnose Prompt:", 
                       choices = diagnosis_prompts, 
-                      selected = diagnosis_prompts[1])
+                      selected = diagnosis_prompts[1]),
+          selectInput("model", "model:",
+                      choices = c("gpt-4o-mini", "o3-mini-2025-01-31"), 
+                      selected = "gpt-4o-mini")
         ),
         actionButton("update_chat", "Tryk her før din skriver i chatten første gang", class = "btn-primary mt-3")
       )
@@ -79,7 +82,7 @@ server <- function(input, output, session) {
   # Initialize chat when app starts or when prompted
   create_chat <- function() {
     ellmer::chat_openai(
-      model = "gpt-4o-mini",
+      model = input$model,
       system_prompt = str_glue(
         interpolate_file(here("prompts", "start", input$start_prompt)), "  ",
         interpolate_file(here("prompts", "person", input$person_prompt)), "  ",
