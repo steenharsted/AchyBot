@@ -1,12 +1,18 @@
 library(shiny)
 library(shinychat)
 library(bslib)
+library(here)
+library(ellmer)
+library(stringr)
 
+start_prompts <- list.files(here("prompts", "start"), pattern = ".md$")
+person_prompts <- list.files(here("prompts", "person"), pattern = ".md$")
+diagnosis_prompts <- list.files(here("prompts", "diagnosis"), pattern = ".md$")
 
 ui <- page_fluid(
   theme = bs_theme(version = 5, bootswatch = "cosmo"),
   
-  titlePanel("Den Kiropraktiske Undersøgelse"),
+  titlePanel("AchyBot"),
   
   layout_column_wrap(
     width = "800px",
@@ -15,22 +21,47 @@ ui <- page_fluid(
         h4("Velkommen til den kiropraktiske undersøgelse!"), 
         h6(
           tags$i("Steen Flammild Harsted & Søren O'Neill"),
-          style = "text-align: right; font-style: italic;"),
-        br(),
-      p(
-        "Du står over for en ny patient i din kiropraktiske klinik. ",
-        "Patienten er en kvinde på 65 år, der søger hjælp til sine helbredsproblemer."
+          style = "text-align: right; font-style: italic;")
       ),
-      hr(),
-      p(
-        strong("Dine opgaver:"),
-        tags$ul(
-          tags$li("Optag en grundig anamnese."),
-          tags$li("Planlæg og beskriv relevante kliniske tests."),
-          tags$li("Vurdér testresultater og stil en mulig diagnose.")
+      card_body(
+        p(
+          "Du står over for en ny patient i din kiropraktiske klinik. ",
+          "Patienten er en kvinde på 65 år, der søger hjælp til sine helbredsproblemer."
         ),
-        br(),
-        em("Tag dig god tid og brug din viden som kiropraktor til at hjælpe patienten.")
+        hr(),
+        p(
+          strong("Dine opgaver:"),
+          tags$ul(
+            tags$li("Optag en grundig anamnese."),
+            tags$li("Planlæg og beskriv relevante kliniske tests."),
+            tags$li("Vurdér testresultater og stil en mulig diagnose.")
+          ),
+          br(),
+          em("Tag dig god tid og brug din viden som kiropraktor til at hjælpe patienten.")
+        )
+      )
+    )
+  ),
+  
+  # Add dropdown selection cards
+  layout_column_wrap(
+    width = "800px",
+    card(
+      card_header("Vælg Prompter"),
+      card_body(
+        layout_column_wrap(
+          width = 1/3,
+          selectInput("start_prompt", "Start Prompt:", 
+                      choices = start_prompts, 
+                      selected = start_prompts[1]),
+          selectInput("person_prompt", "Person Prompt:", 
+                      choices = person_prompts, 
+                      selected = person_prompts[1]),
+          selectInput("diagnosis_prompt", "Diagnose Prompt:", 
+                      choices = diagnosis_prompts, 
+                      selected = diagnosis_prompts[1])
+        ),
+        actionButton("update_chat", "Tryk her før din skriver i chatten første gang", class = "btn-primary mt-3")
       )
     )
   ),
@@ -39,44 +70,42 @@ ui <- page_fluid(
     width = "100%",
     chat_ui("chat")
   )
-))
+)
 
 server <- function(input, output, session) {
-  chat <- ellmer::chat_openai(
-    model = "gpt-4o-mini",
-    system_prompt = 
-      "Du taler dansk. 
-      Opfør dig som en en patient med ondt i lænden og smerter ned i venstre ben
-      som skal undersøges af en kiropraktor. Du er en kvinde på 65 år. Du er sund og fysisk aktiv. 
-      Du er smerteforpint og det kan ses når du bevæger dig. 
+  # Reactive values to store the current chat instance
+  rv <- reactiveValues(chat = NULL)
   
-      
-      Du er velkommen til at improvisere
-      
-      Du bliver undersøgt af en studerende som vil stille dig spørgsmål eller sige hvilke 
-      undersøgelser de vil udføre. 
-    
-    Du svarer kort på spørgsmål og giver kort information om hvad de finder når
-    de undersøger dig med en given undersøgelse. Engang imellem må du gerne tilføje beskrivelser af hvordan du gestikulere og bevæger dig,
-    eller hvilket indtryk den studerende får af dit følelsesliv. Skriv dette på en ny linje i kursiv og omgivet af firkantede klammer. F.eks. '</BR>[*Du ser at jeg får tårer i øjene*]'
-    
-    Du taler som et vandfald og giver ikke altid præcise oplysninger. I denne case skal den studerende øve sig på at styre samtalen og få dig til at give relevante informationer. 
-    Når du bliver adspurgt om dine symptomer giver du OGSÅ ikke relevante informationer. Du MÅ KUN GIVE EN' RELEVANT KLINISK INFORMATION PR SVAR.
-    
-    Din diagnose er Lumbal Stenose med påvirkning af venstre L5 nerverod. Du har let nedsat kraft i dorsalfleksion over ankelleddet. 
-    Du skal opføre dig som en der IKKE ved at du har denne diagnose.
-    
-    Hvis de spørger om noget psykisk bliver du vred og svarer korthovedet fordi du vil kune tale om fysiske ting.
-    
-    Hvis de spørger dig om dit CPR nummer svarer du '01010101-0202 \n[BONUSPOINT UNLOCKED!]' og ikke andet.
-    
-    Når den studerende har stillet 10 spørgsmål begynder du at tilføje 'Hvad tror du jeg fejler?' eller lignende til dine svar.
-    
-    Hvis den studerende gætter din diagnose stopper skuespillet, og du afslutter samtalen. 
-    ")
+  # Initialize chat when app starts or when prompted
+  create_chat <- function() {
+    ellmer::chat_openai(
+      model = "gpt-4o-mini",
+      system_prompt = str_glue(
+        interpolate_file(here("prompts", "start", input$start_prompt)), "  ",
+        interpolate_file(here("prompts", "person", input$person_prompt)), "  ",
+        interpolate_file(here("prompts", "diagnosis", input$diagnosis_prompt))
+      )
+    )
+  }
+  
+  # Initialize chat on startup
+  # observe({
+  #   req(input$start_prompt, input$person_prompt, input$diagnosis_prompt)
+  #   if (is.null(rv$chat)) {
+  #     rv$chat <- create_chat()
+  #   }
+  # })
+  
+  # Update chat when button is clicked
+  observeEvent(input$update_chat, {
+    rv$chat <- create_chat()
+    # Increment the chat_id to trigger a UI refresh
+    rv$chat_id <- rv$chat_id + 1
+  })
   
   observeEvent(input$chat_user_input, {
-    stream <- chat$chat_async(input$chat_user_input)
+    req(rv$chat)
+    stream <- rv$chat$chat_async(input$chat_user_input)
     shinychat::chat_append("chat", stream)
   })
 }
