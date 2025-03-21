@@ -20,13 +20,15 @@ ui <- page_fluid(
       card_header(
         h4("Velkommen til den kiropraktiske undersøgelse!"), 
         h6(
-          tags$i("Steen Flammild Harsted & Søren O'Neill"),
-          style = "text-align: right; font-style: italic;")
+          tags$i("Steen Flammild Harsted, Henrik Hein Lauridsen & Søren O'Neill"),
+          style = "text-align: right; font-style: italic;"),
+        h6(
+          tags$i("Magnus Mortensen & Martin Sand Jensen"),
+          style = "text-align: right; font-style: italic;"),
       ),
       card_body(
         p(
-          "Du står over for en ny patient i din kiropraktiske klinik. ",
-          "Patienten er en kvinde på 65 år, der søger hjælp til sine helbredsproblemer."
+          "Du står over for en ny patient i din kiropraktiske klinik. "
         ),
         hr(),
         p(
@@ -40,13 +42,9 @@ ui <- page_fluid(
           em("Tag dig god tid og brug din viden som kiropraktor til at hjælpe patienten.")
         )
       )
-    )
-  ),
-  
-  # Add dropdown selection cards
-  layout_column_wrap(
-    width = "800px",
+    ), 
     card(
+      max_height = "250px",
       card_header("Vælg Prompter"),
       card_body(
         layout_column_wrap(
@@ -68,10 +66,19 @@ ui <- page_fluid(
       )
     )
   ),
-  
+  # 
+  # # Add dropdown selection cards
+  # layout_column_wrap(
+  #   width = "800px",
+  #   
+  # ),
+  # 
   layout_column_wrap(
     width = "100%",
-    chat_ui("chat")
+    p("TO DO.. Info om patienten baseret på hvilken person der er valgt."),
+    p("e.g. du ser en ældre kvinde bla bla... evt med et billede"),
+    chat_ui("chat", 
+            placeholder = "Patienten sidder foran dig...")
   )
 )
 
