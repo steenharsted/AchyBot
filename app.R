@@ -5,12 +5,35 @@ library(here)
 library(ellmer)
 library(stringr)
 
-start_prompts <- list.files(here("prompts", "start"), pattern = ".md$")
-person_prompts <- list.files(here("prompts", "person"), pattern = ".md$")
-diagnosis_prompts <- list.files(here("prompts", "diagnosis"), pattern = ".md$")
+start_prompts <- list.files(here("prompts", "start"), pattern = ".md$", recursive = TRUE) |> str_remove(".md$")
+person_prompts <- list.files(here("prompts", "person"), pattern = ".md$", recursive = TRUE) |> str_remove(".md$")
+diagnosis_prompts <- list.files(here("prompts", "diagnosis"), pattern = ".md$", recursive = TRUE) |> str_remove(".md$")
+feedback_prompts <- list.files(here("prompts", "feedback"), pattern = ".md$", recursive = TRUE) |> str_remove(".md$")
+
 
 ui <- page_fluid(
   theme = bs_theme(version = 5, bootswatch = "cosmo"),
+  
+  # Add custom CSS
+  tags$head(
+    tags$style(HTML("
+      .small-font {
+        font-size: 0.85rem !important;
+      }
+      .tiny-font {
+        font-size: 0.75rem !important;
+      }
+      .small-font .selectize-input,
+      .small-font .selectize-dropdown,
+      .small-font label,
+      .small-font .btn,
+      .tiny-font .selectize-input,
+      .tiny-font .selectize-dropdown,
+      .tiny-font label {
+        font-size: inherit !important;
+      }
+    "))
+  ),
   
   titlePanel("AchyBot"),
   
@@ -45,43 +68,58 @@ ui <- page_fluid(
     ), 
     card(
       max_height = "250px",
-      card_header("Vælg Prompter"),
+      card_header(tags$div("Vælg Prompter", class = "small-font")),
       card_body(
         layout_column_wrap(
-          width = 1/4,
-          selectInput("start_prompt", "Start Prompt:", 
-                      choices = start_prompts, 
-                      selected = start_prompts[1]),
-          selectInput("person_prompt", "Person Prompt:", 
-                      choices = person_prompts, 
-                      selected = person_prompts[1]),
-          selectInput("diagnosis_prompt", "Diagnose Prompt:", 
-                      choices = diagnosis_prompts, 
-                      selected = diagnosis_prompts[1]),
-          selectInput("model", "model:",
-                      choices = c("gpt-4o-mini", "o3-mini-2025-01-31"), 
-                      selected = "gpt-4o-mini")
+          width = 1/5,
+          tags$div(
+            selectInput("start_prompt", "Start Prompt:",
+                        choices = start_prompts,
+                        selected = start_prompts[1]),
+            class = "tiny-font"
+          ),
+          tags$div(
+            selectInput("person_prompt", "Person Prompt:",
+                        choices = person_prompts,
+                        selected = person_prompts[1]),
+            class = "tiny-font"
+          ),
+          tags$div(
+            selectInput("diagnosis_prompt", "Diagnose Prompt:",
+                        choices = diagnosis_prompts,
+                        selected = diagnosis_prompts[1]),
+            class = "tiny-font"
+          ),
+          tags$div(
+            selectInput("model", "Model:",
+                        choices = c("gpt-4o-mini", "o3-mini-2025-01-31"),
+                        selected = "gpt-4o-mini"),
+            class = "tiny-font"
+          ),
+          tags$div(
+            selectInput("feedback", "Feedback:",
+                        choices = c(feedback_prompts),
+                        selected = feedback_prompts[1]),
+            class = "tiny-font"
+          )
         ),
-        actionButton("update_chat", "Tryk her før din skriver i chatten første gang", class = "btn-primary mt-3")
+        tags$div(
+          actionButton("update_chat", "Tryk her før din skriver i chatten første gang",
+                       class = "btn-primary mt-3")
+        )
       )
     )
   ),
-  # 
-  # # Add dropdown selection cards
-  # layout_column_wrap(
-  #   width = "800px",
-  #   
-  # ),
-  # 
+  
   layout_column_wrap(
     width = "100%",
     p("TO DO.. Info om patienten baseret på hvilken person der er valgt."),
     p("e.g. du ser en ældre kvinde bla bla... evt med et billede"),
+    p("iconet på chatbotten skal ændres efter person"),
     chat_ui("chat", 
             placeholder = "Patienten sidder foran dig...")
   )
 )
-
 server <- function(input, output, session) {
   # Reactive values to store the current chat instance
   rv <- reactiveValues(chat = NULL)
@@ -91,9 +129,10 @@ server <- function(input, output, session) {
     ellmer::chat_openai(
       model = input$model,
       system_prompt = str_glue(
-        interpolate_file(here("prompts", "start", input$start_prompt)), "  ",
-        interpolate_file(here("prompts", "person", input$person_prompt)), "  ",
-        interpolate_file(here("prompts", "diagnosis", input$diagnosis_prompt))
+        interpolate_file(paste0(here("prompts", "start", input$start_prompt), ".md")), "  ",
+        interpolate_file(paste0(here("prompts", "person", input$person_prompt), ".md")), "  ",
+        interpolate_file(paste0(here("prompts", "diagnosis", input$diagnosis_prompt), ".md")), " ",
+        interpolate_file(paste0(here("prompts", "feedback", input$feedback_prompt), ".md"))
       )
     )
   }

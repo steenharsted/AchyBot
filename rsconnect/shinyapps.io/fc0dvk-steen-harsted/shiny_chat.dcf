@@ -5,6 +5,6 @@ account: fc0dvk-steen-harsted
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 13579981
-bundleId: 9547057
+bundleId: 9980131
 url: https://fc0dvk-steen-harsted.shinyapps.io/shiny_chat/
 version: 1
