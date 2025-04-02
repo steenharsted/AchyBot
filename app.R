@@ -5,10 +5,10 @@ library(here)
 library(ellmer)
 library(stringr)
 
-start_prompts <- list.files(here("prompts", "start"), pattern = ".md$", recursive = TRUE) |> str_remove(".md$")
-person_prompts <- list.files(here("prompts", "person"), pattern = ".md$", recursive = TRUE) |> str_remove(".md$")
-diagnosis_prompts <- list.files(here("prompts", "diagnosis"), pattern = ".md$", recursive = TRUE) |> str_remove(".md$")
-feedback_prompts <- list.files(here("prompts", "feedback"), pattern = ".md$", recursive = TRUE) |> str_remove(".md$")
+start_prompts <- list.files(here("prompts", "start"), pattern = ".md$", recursive = TRUE) 
+person_prompts <- list.files(here("prompts", "person"), pattern = ".md$", recursive = TRUE) 
+diagnosis_prompts <- list.files(here("prompts", "diagnosis"), pattern = ".md$", recursive = TRUE) 
+feedback_prompts <- list.files(here("prompts", "feedback"), pattern = ".md$", recursive = TRUE) 
 
 
 ui <- page_fluid(
@@ -97,7 +97,7 @@ ui <- page_fluid(
             class = "tiny-font"
           ),
           tags$div(
-            selectInput("feedback", "Feedback:",
+            selectInput("feedback_prompt", "Feedback:",
                         choices = c(feedback_prompts),
                         selected = feedback_prompts[1]),
             class = "tiny-font"
@@ -129,10 +129,10 @@ server <- function(input, output, session) {
     ellmer::chat_openai(
       model = input$model,
       system_prompt = str_glue(
-        interpolate_file(paste0(here("prompts", "start", input$start_prompt), ".md")), "  ",
-        interpolate_file(paste0(here("prompts", "person", input$person_prompt), ".md")), "  ",
-        interpolate_file(paste0(here("prompts", "diagnosis", input$diagnosis_prompt), ".md")), " ",
-        interpolate_file(paste0(here("prompts", "feedback", input$feedback_prompt), ".md"))
+        interpolate_file(here("prompts", "start", input$start_prompt)), "  ",
+        interpolate_file(here("prompts", "person", input$person_prompt)), "  ",
+        interpolate_file(here("prompts", "diagnosis", input$diagnosis_prompt)), " ",
+        interpolate_file(here("prompts", "feedback", input$feedback_prompt))
       )
     )
   }
