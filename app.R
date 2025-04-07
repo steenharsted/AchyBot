@@ -113,9 +113,9 @@ ui <- page_fluid(
   
   layout_column_wrap(
     width = "100%",
-    p("TO DO.. Info om patienten baseret på hvilken person der er valgt."),
-    p("e.g. du ser en ældre kvinde bla bla... evt med et billede"),
-    p("iconet på chatbotten skal ændres efter person"),
+    # p("TO DO.. Info om patienten baseret på hvilken person der er valgt."),
+    # p("e.g. du ser en ældre kvinde bla bla... evt med et billede"),
+    # p("iconet på chatbotten skal ændres efter person"),
     chat_ui("chat", 
             placeholder = "Patienten sidder foran dig...")
   )
