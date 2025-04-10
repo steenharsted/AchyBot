@@ -10,9 +10,9 @@ Imports:
     shinychat,
     ellmer,
     bslib (>= 0.5.0),
-    curl (>= 6.1.0)
-    future
-    here
+    curl (>= 6.1.0),
+    future,
+    here,
     promises
 Remotes:
     github::tidyverse/ellmer@main,

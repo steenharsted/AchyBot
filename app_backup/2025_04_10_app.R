@@ -5,11 +5,11 @@ library(here)
 library(ellmer)
 library(stringr)
 
-# List files
 start_prompts <- list.files(here("prompts", "start"), pattern = ".md$", recursive = TRUE) 
 person_prompts <- list.files(here("prompts", "person"), pattern = ".md$", recursive = TRUE) 
 diagnosis_prompts <- list.files(here("prompts", "diagnosis"), pattern = ".md$", recursive = TRUE) 
 feedback_prompts <- list.files(here("prompts", "feedback"), pattern = ".md$", recursive = TRUE) 
+
 
 ui <- page_fluid(
   theme = bs_theme(version = 5, bootswatch = "cosmo"),
@@ -31,15 +31,6 @@ ui <- page_fluid(
       .tiny-font .selectize-dropdown,
       .tiny-font label {
         font-size: inherit !important;
-      }
-      .prompt-preview {
-        background-color: #f8f9fa;
-        border: 1px solid #dee2e6;
-        border-radius: 0.25rem;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        max-height: 200px;
-        overflow-y: auto;
       }
     "))
   ),
@@ -76,7 +67,7 @@ ui <- page_fluid(
       )
     ), 
     card(
-      max_height = "600px",
+      max_height = "250px",
       card_header(tags$div("Vælg Prompter", class = "small-font")),
       card_body(
         layout_column_wrap(
@@ -112,17 +103,6 @@ ui <- page_fluid(
             class = "tiny-font"
           )
         ),
-        # Card to display the combined text
-        card(
-          max_height = "300px",
-          card_header("System Prompt Preview"),
-          card_body(
-            div(
-              verbatimTextOutput("combined_text"),
-              class = "prompt-preview"
-            )
-          )
-        ),
         tags$div(
           actionButton("update_chat", "Tryk her før din skriver i chatten første gang",
                        class = "btn-primary mt-3")
@@ -133,44 +113,47 @@ ui <- page_fluid(
   
   layout_column_wrap(
     width = "100%",
+    # p("TO DO.. Info om patienten baseret på hvilken person der er valgt."),
+    # p("e.g. du ser en ældre kvinde bla bla... evt med et billede"),
+    # p("iconet på chatbotten skal ændres efter person"),
     chat_ui("chat", 
             placeholder = "Patienten sidder foran dig...")
   )
 )
-
 server <- function(input, output, session) {
   # Reactive values to store the current chat instance
-  rv <- reactiveValues(chat = NULL, chat_id = 0)
-  
-  # Function to generate the combined prompt text
-  generate_prompt_text <- reactive({
-    # Make full paths to the files
-    start_path <- here("prompts", "start", input$start_prompt)
-    person_path <- here("prompts", "person", input$person_prompt)
-    diagnosis_path <- here("prompts", "diagnosis", input$diagnosis_prompt)
-    feedback_path <- here("prompts", "feedback", input$feedback_prompt)
-    
-    # Combine the text with spacing
-    str_glue(
-      "{ellmer::interpolate_file(start_path)}  ",
-      "{ellmer::interpolate_file(person_path)}  ",
-      "{ellmer::interpolate_file(diagnosis_path)} ",
-      "{ellmer::interpolate_file(feedback_path)}"
-    )
-  })
+  rv <- reactiveValues(chat = NULL)
   
   # Output for combined text
   output$combined_text <- renderText({
-    generate_prompt_text()
+    str_glue(
+      interpolate_file(here("prompts", "start", input$start_prompt)), "  ",
+      interpolate_file(here("prompts", "person", input$person_prompt)), "  ",
+      interpolate_file(here("prompts", "diagnosis", input$diagnosis_prompt)), " ",
+      interpolate_file(here("prompts", "feedback", input$feedback_prompt))
+    )
   })
   
   # Initialize chat when app starts or when prompted
   create_chat <- function() {
     ellmer::chat_openai(
       model = input$model,
-      system_prompt = generate_prompt_text()
+      system_prompt = str_glue(
+        interpolate_file(here("prompts", "start", input$start_prompt)), "  ",
+        interpolate_file(here("prompts", "person", input$person_prompt)), "  ",
+        interpolate_file(here("prompts", "diagnosis", input$diagnosis_prompt)), " ",
+        interpolate_file(here("prompts", "feedback", input$feedback_prompt))
+      )
     )
   }
+  
+  # Initialize chat on startup
+  # observe({
+  #   req(input$start_prompt, input$person_prompt, input$diagnosis_prompt)
+  #   if (is.null(rv$chat)) {
+  #     rv$chat <- create_chat()
+  #   }
+  # })
   
   # Update chat when button is clicked
   observeEvent(input$update_chat, {
