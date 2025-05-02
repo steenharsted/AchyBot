@@ -5,51 +5,52 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 
 ## Hovedklage
 
-- Tyngdefornemmelse og smerter i benene ved gang, lindres ved at sidde eller læne sig frem.
+- Tyngdefornemmelse og smerter i benene ved gang.
 
 ## Uddybende oplysninger
 
 - **Alder**: 72 år.
-- **Lokalisation**: Lænd og begge ben, ofte glutealt, baglår og lægge.
-- **Smertemønster**: Belastningsudløste bensymptomer (neurogen claudicatio), ofte bilateralt.
-- **Dominerende smerte**: Benene generer mest – træthed, smerter eller paræstesier.
-- **Følesans/kraft**: Let nedsat sensibilitet og diffus nedsat kraft ved længere gang, normal i hvile.
+- **Lokalisation**: Lænd og begge ben, ofte balder, baglår og lægge.
+- **Smertemønster**: Belastning forværrer smerterne, ofte begge ben.
+- **Dominerende smerte**: Benene generer mest – smerte og træthed.
+- **Følesans/kraft**: Let nedsat følesans og diffus nedsat kraft ved længere gang, normal i hvile.
 - **Smertetype**: Dyb, trykkende, snurrende.
 - **NRS**: Ben: 6/10 ved belastning, 0/10 i hvile (siddende). Lænd: 2–3/10.
 - **Debut**: Snigende, udviklet over måneder til år.
-- **Forløb**: Progredierende funktionsnedsættelse, især gangdistance.
+- **Forløb**: Tiltagende funktionsnedsættelse, især gangdistance.
 - **Døgnvariation**: Ingen døgnvariation, men aktivitetsafhængig.
 - **Søvn**: Ingen natlige smerter, sover generelt uforstyrret.
-- **Medicin**: Panodil p.n., forsøgt NSAID (gastrointolerans).
+- **Medicin**: Panodil efter behov, forsøgt Ibuprofen, giver mavegener.
 - **Tidligere**: Lændesmerter tidligere i livet, men uden bensymptomer.
-- **Komorbiditet**: Hypertension, lettere slidgigt i knæ. Ingen kendt neurologisk eller systemisk sygdom.
-- **Cauda equina syndrom**: Ingen problemer med blære- eller tarmfunktion. Ingen ridebukseanæstesi.
+- **Komorbiditet**: Forhøjet blodtryk, lettere slidgigt i knæ.
+- **Cauda equina syndrom**: Ingen problemer med blære- eller tarmfunktion. Ingen føleforstyrrelse omkring skridtet. 
 - **B-symptomer**: Ingen feber, nattesved, vægttab eller udtalt træthed.
-- **Ryger**: nej
+- **Ryger**: Nej
 - **Alkohol**: 7-10 genstande om ugen
 
 ## Aktivitet og deltagelse
 
 - **Forværrende**: Gang, stående stilling, nedad bakke.
-- **Lindrende**: Siddende stilling, fleksion, cykling.
-- **Funktionstab**: Gangdistance begrænset til ca. 100 meter grundet bensmerter. Vanskeligheder ved indkøb og længere gåture.
-- **Deltagelse**: Nedsat deltagelse i sociale aktiviteter og fritidsaktiviteter. Deltager ikke længere i foreningsliv.
-- **Styringsbesvær/faldtendens**: Let vaklen, særligt på ujævnt underlag. Ikke faldet.
-- **Finmotorik**: Intakt.
-- **Behandling**: Har tidligere gået til fysioterapi med manuel behandling (mobilisering af columna lumbalis), stabiliserende øvelser og udspænding af hoftebøjere og glutealmuskulatur. Effekten var begrænset – oplevede kun kortvarig lindring og mistede motivation for at fortsætte øvelserne derhjemme. Deltager aktuelt i kommunalt ryghold én gang ugentligt med fokus på kredsløb og rygstyrke; dette giver let symptomlindring, især i timerne efter træning. Har desuden forsøgt varmeomslag, som lindrer midlertidigt, og smertestillende medicin (Panodil, NSAID). NSAID seponeret pga. gastrointolerans. Ingen tidligere kirurgisk behandling. Der er ikke foretaget billeddiagnostik inden for det seneste år.
-
+- **Lindrende**: Siddende stilling, foroverbøjning, cykling.
+- **Funktionstab**: Kan maks gå ca. 100 meter grundet bensmerter. Vanskeligheder ved indkøb og længere gåture.
+- **Deltagelse**: Nedsat deltagelse i sociale aktiviteter og fritidsaktiviteter. Deltager ikke længere i foreningslivet.
+- **Styringsbesvær/Faldtendens**: Let vaklen, særligt på ujævnt underlag. Ikke faldet.
+- **Finmotorik**: Normal. 
+- **Behandling**: Jeg har tidligere været hos en fysioterapeut, hvor jeg fik behandling med hænderne for at løsne i lænden. Jeg lavede også øvelser for at styrke ryggen og strækøvelser for hofterne og ballemusklerne. Det hjalp kun lidt og kun i kort tid, og jeg mistede motivationen for at lave øvelserne derhjemme.  
+Lige nu deltager jeg på et kommunalt ryghold en gang om ugen, hvor vi laver træning for kondition og rygstyrke. Det giver en smule lindring, især i timerne efter træningen.  
+- **Billeddiagnostik**: Der er ingen billeddiagnostik.
 
 ## Omgivelsesfaktorer
 
 - **Bolig**: Bor i ældre lejlighed med elevator.
 - **Familie**: Gift, har voksne børn. God familiestøtte.
 - **Socialt**: God kontakt med tidligere kolleger og naboer.
-- **Erhverv**: Tidligere fysisk arbejde. Nu pensionist.
+- **Erhverv**: Tidligere VVS. Nu pensionist.
 
 ## Personlige faktorer
 
 - **Sygdomsopfattelse**: Tænker det er “slid” og alder, men frustreret over begrænsningerne.
-- **Mestring**: Forsøger at holde sig aktiv, men opgiver ofte pga. symptomer.
+- **Mestring**: Forsøger at holde sig aktiv, men opgiver ofte pga. smerter.
 - **Bevægeadfærd**: Går korte ture dagligt. Undgår længere gang og belastende aktiviteter.
 - **Forventninger og mål**: Ønsker at kunne gå længere uden at skulle holde pause hele tiden.
 
@@ -68,15 +69,15 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 - **Slump test**: Let stramhed i ryggen, men ingen bensymptomer.  
 - **Lhermitte’s test**: Ingen udstråling.   
 - **Valsalva’s manøvre**: Ingen smerter.  
-- **Motorik**: Let nedsat kraft i EHL (L5) og plantarfleksion (S1) bilateralt.  
-- **Sensorik**: Let hypoæstesi i L5-S1 bilateralt.  
-- **Reflekser**: Let nedsatte achillesreflekser, evt. patellarrefleks.  
+- **Motorik**: Let nedsat kraft i m. extensor hallucis longus og plantarfleksion bilateralt.  
+- **Sensorik**: Let hypoæstesi svarende til baglår, midt på skinneben og laterale fodryg bilateralt.  
+- **Reflekser**: Let nedsatte achillesreflekser 
 - **Ganganalyse**: Foroverbøjet; symptomlindring ved fleksion.  
 - **Balancetest**: Romberg: Svejer lidt; usikker tandemgang.  
 - **Minor’s sign**: Rejser sig ved at støtte sig med hænderne.  
 - **Kemp’s test**: Let provokerende bilateralt i lænden ved ekstension/lateral fleksion.  
 - **Prone segmental instability test**: Ingen ubehag.  
-- **Modificeret Schober**: 8 cm.  
+- **Modificeret Schober**: 5 cm.  
 - **Thorax ekspansion**: 6  cm.  
 - **Nakke-væg afstand**: 3 cm.  
 - **SI-led tests**:  
@@ -84,10 +85,11 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
   - Distraktionstest: Ingen ubehag.  
   - Sacral apex pressure test: Let ubehag lokalt i lænd.  
   - Gaenslen’s test: Let provokerende bilateralt.  
-  - P4 test (Thigh Thrust test): Let ubehag i sacroiliacaleder.  
+  - P4 test (Thigh Thrust test): Let ubehag i sacroiliacaled.  
   - FABER test (Patrick’s test): Let nedsat bevægelighed og ubehag glutealt.  
 - **Bicycle test**: Forværring ved oprejst cykling; lindring i foroverbøjet stilling.  
 - **Perkussion/vibration af proc. spinosus**: Ingen knogleømhed.  
 - **Heel strike test**: Mærker ingen smerter.  
 - **Plantar respons/Babinski refleks**: Intet abnormt.  
 - **Test for klonus**: Intet abnormt.
+

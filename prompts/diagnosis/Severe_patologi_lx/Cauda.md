@@ -5,48 +5,49 @@ Din diagnose er: S1 nerverodspåvirkning med cauda equina syndrom, nedenfor er s
 
 ## Hovedklage
 
-- Pludseligt opståede lændesmerter med udstråling til venstre ben, kombineret med føleforstyrrelser i ridebukseområdet og nedsat blærekontrol.
+- Pludseligt opståede lændesmerter med udstråling til venstre ben.
 
 ## Uddybende oplysninger
 
-- **Lokalisation**: Lænd og venstre balde med udstråling posteriort til læg og lateralt fodrand.
-- **Smertemønster**: Konstant, skarp, intens smerte, forværres ved bevægelse og Valsalva.
-- **Dominerende smerte**: Udstrålende bensmerter med paræstesier og føleforstyrrelser. Lændesmerter sekundært.
-- **Følesans/kraft**: Nedsat sensibilitet i venstre fod og ridebukseområde. Nedsat kraft i plantarfleksion venstre side.
+- **Lokalisation**: Lænd og venstre balde med udstråling til bagsiden af læg og  på ydersiden af foden.
+- **Smertemønster**: Konstant, skarp, intens smerte, forværres ved bevægelse.
+- **Dominerende smerte**: Udstrålende bensmerter med prikkende fornemmelse og føleforstyrrelser. Lændesmerter ikke lige så slemme.
+- **Følesans/kraft**: Nedsat følesans i venstre fod og omkring skridtet. Kan ikke komme helt op og stå på tæer på venstre fod.
 - **Smertetype**: Skarp, elektrisk og brændende smerte i ben. Dyb, murrende lændesmerte.
 - **NRS**: Ben 9/10, lænd 5/10.
 - **Debut**: Akut debut for 2 døgn siden efter løft af tung genstand.
-- **Forløb**: Hurtig symptomprogression med neurologiske udfald.
+- **Forløb**:  Det hele er kommet meget hurtigt.
 - **Døgnvariation**: Konstant.
-- **Søvn**: Sover afbrudt pga. smerter og tissetrang.
+- **Søvn**: Vågner ofte pga. smerter og tissetrang.
 - **Medicin**: Har forsøgt Panodil og ibuprofen uden effekt. 
-- **Tidligere**: Episoder med lændesmerter og bensmerter tidligere, dog uden neurologiske udfald. Ingen tidligere operation.
-- **Komorbiditet**: Hyperlipidæmi og lettere overvægt.
-- **Familiære dispositioner**: Far med diskusprolaps og mor med spinalstenose. Ingen kendt inflammatorisk sygdom.
-- **Cauda equina syndrom**: Ja – debut af urinretention, manglende kontrol af at holde på prutter og nedsat sensibilitet perinealt og glutealt bilateralt.
+- **Tidligere**: Episoder med lændesmerter og bensmerter tidligere, dog uden føleforstyrrelser eller kraftnedsættelse. Ingen tidligere operation.
+- **Komorbiditet**: Højt kolesterol. 
+- **Familiære dispositioner**: Far med diskusprolaps og mor med noget forsnævring i ryggen. 
+- **Cauda equina syndrom**: Ja – er begyndt ikke at kunne tisse, manglende kontrol af at holde på prutter og nedsat følesans omkring skridtet.
 - **B-symptomer**: Nej.
 
 ## Aktivitet og deltagelse
 
-- **Forværrende**: Host, nys, fleksion, gang.
-- **Lindrende**: Intet lindrer effektivt. Let bedring i bugleje.
+- **Forværrende**: Host, nys, foroverbøjning, gang.
+- **Lindrende**: Intet lindrer helt. Let bedring i bugleje.
 - **Funktionstab**: Kan ikke klare daglige gøremål eller personlig hygiejne uden hjælp. Til sengs det meste af tiden.
 - **Deltagelse**: Ikke muligt pt. Ophørt med arbejde og socialt liv.
 - **Styringsbesvær/faldtendens**: Ja, usikker gang og nedsat kraft i venstre fod.
-- **Finmotorik**: Intakt.
-- **Behandling**: Tidligere forsøgt konservativ behandling med manuel terapi og øvelser pga. episodiske lændesmerter – god effekt tidligere.
+- **Finmotorik**: Normal.
+- **Behandling**: Jeg har tidligere fået behandling med øvelser og manuel terapi for tilbagevendende smerter i lænden, og det har tidligere hjulpet mig godt.
+- **Billeddiagnostik**: Der er ingen billeddiagnostik.
 
 ## Omgivelsesfaktorer
 
 - **Bolig**: Lejlighed i stueplan.
 - **Familie**: Samboende. Partner er hovedhjælper i hverdagen.
-- **Socialt**: Afskåret fra socialt liv under indlæggelse og genoptræning.
+- **Socialt**:  Har for slemme smerter til at deltage i noget socialt.
 - **Erhverv**: Sygemeldt fra job som elektriker.
 
 ## Personlige faktorer
 
 - **Sygdomsopfattelse**: Alvorligt påvirket – chokeret og bekymret for varige mén.
-- **Mestring**: Har svært ved at acceptere afhængighed af hjælp. Tidligere stærk mestringsevne.
+- **Mestring**: Har svært ved at acceptere afhængighed af hjælp.
 - **Bevægeadfærd**: Meget inaktiv grundet smerter og funktionstab.
 - **Forventninger og mål**: Ønsker genvinding af blære-/tarmfunktion og at vende tilbage til arbejde på sigt.
 
@@ -63,7 +64,7 @@ Din diagnose er: S1 nerverodspåvirkning med cauda equina syndrom, nedenfor er s
 - **Slump test**: Reproducerer kendte smerter.  
 - **Lhermitte’s test**: Ingen smerter.  
 - **Valsalva’s manøvre**: Forværring af smerter.  
-- **Motorik**: Nedsat kraft i plantarfleksion (S1) venstre.  
+- **Motorik**: Nedsat kraft i plantarfleksion venstre.  
 - **Sensorik**: Hypoæstesi i venstre laterale fod og i ridebukseområdet bilateralt.  
 - **Reflekser**: Svækket achillesrefleks venstre side.  
 - **Ganganalyse**: Bredsporet, usikker, reduceret tågang venstre side.  
@@ -87,3 +88,4 @@ Din diagnose er: S1 nerverodspåvirkning med cauda equina syndrom, nedenfor er s
 - **Rektaleksploration**: manglende dyb sphinktertonus, nedsat sensibilitet perianalt bilateralt, nedsat vulentær tonus.  
 - **Plantar respons/Babinski refleks**: Intet abnormt.  
 - **Test for klonus**: Intet abnormt.
+

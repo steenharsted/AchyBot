@@ -5,25 +5,26 @@ Din diagnose er: L5 nerverodsirritation pga. lumbal discusprolaps, nedenfor er s
 
 ## Hovedklage
 
-- Lændesmerter med varierende udstråling til venstre ben – beskrives som "murrende og trættende".
+- Lændesmerter med varierende udstråling til venstre lår.
 
 ## Uddybende oplysninger
 
-- **Lokalisation**: Lænd og venstre glutealregion, sjældent ud over knæ.
+- **Lokalisation**: Lænd, venstre balde og lår, sjældent under knæ.
 - **Smertemønster**: Kommer og går – ofte udløst ved løft og rotation.
-- **Dominerende smerte**: Lænden generer mest, benet “larmer” kun indimellem.
-- **Følesans/kraft**: Ikke tydelige føleforstyrrelser. Indimellem føles benet “tungere”.
+- **Dominerende smerte**: Lænden generer mest, benet larmer kun indimellem.
+- **Følesans/kraft**: Ikke tydelige føleforstyrrelser. Indimellem føles benet tungere.
 - **Smertetype**: Dyb, murrende og trættende.
 - **NRS**: Lænd 6/10, ben 2/10.
 - **Debut**: Akut debut efter løft i hjemmet for 3 dage siden.
-- **Forløb**: Bedring i lænd, men benet giver nu utryghed.
+- **Forløb**: Bedring i lænd, men benet begynder at irritere mere nu.
 - **Døgnvariation**: Værst om morgenen og ved slutningen af dagen.
-- **Søvn**: Forstyrret søvn pga. stivhed – ikke pga. bensmerter.
+- **Søvn**: Forstyrret søvn pga. stivhed.
 - **Medicin**: Paracetamol og varmeomslag – god effekt på lænd.
 - **Tidligere**: Aldrig haft bensmerter før.
-- **Komorbiditet**: Let overvægt.
+- **Komorbiditet**: Ingen.
 - **Cauda equina syndrom**: Nej.
 - **B-symptomer**: Nej.
+
 
 ## Aktivitet og deltagelse
 
@@ -32,8 +33,9 @@ Din diagnose er: L5 nerverodsirritation pga. lumbal discusprolaps, nedenfor er s
 - **Funktionstab**: Har svært ved husarbejde, undgår indkøb.
 - **Deltagelse**: Deltager i sociale aktiviteter i mindre grad.
 - **Styringsbesvær/faldtendens**: Ingen egentlige fald, men oplever træthed i venstre ben.
-- **Finmotorik**: Intakt.
-- **Behandling**: Har modtaget behandling hos fysioterapeut med fokus på mobilitet og stabilitet. Oplever klar bedring i lænd, men bensymptomer er begyndt at fylde mere. 
+- **Finmotorik**: Normal.
+- **Behandling**: Har modtaget behandling hos fysioterapeut med fokus på at få bevægelse i området og stabilitet. Oplever klar bedring i lænd, men bensymptomer er begyndt at fylde mere. 
+- **Billeddiagnostik**: Der er ingen billeddiagnostik.
 
 ## Omgivelsesfaktorer
 
@@ -44,8 +46,8 @@ Din diagnose er: L5 nerverodsirritation pga. lumbal discusprolaps, nedenfor er s
 
 ## Personlige faktorer
 
-- **Sygdomsopfattelse**: Tror det "bare er lænden", men er bekymret over fornemmelsen i benet.
-- **Mestring**: God mestring ift. øvelser. Bekymret for at gøre noget forkert.
+- **Sygdomsopfattelse**: Tror det bare er lænden, men er bekymret over fornemmelsen i benet.
+- **Mestring**: Får lavet sine øvelser hver dag. Bekymret for at gøre noget forkert.
 - **Bevægeadfærd**: Aktiv i perioder – lytter til kroppen.
 - **Forventninger og mål**: Ønsker at undgå operation og vende tilbage til arbejde.
 
@@ -85,3 +87,4 @@ Din diagnose er: L5 nerverodsirritation pga. lumbal discusprolaps, nedenfor er s
 - **Heel strike test**: Ingen smerter.  
 - **Plantar respons/Babinski refleks**: Intet abnormt.  
 - **Test for klonus**: Intet abnormt.
+

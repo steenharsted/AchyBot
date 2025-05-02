@@ -10,22 +10,22 @@ Din diagnose er: L5 nerverodsirritation pga. lumbal discusprolaps, nedenfor er s
 ## Uddybende oplysninger
 
 - **Lokalisation**: Venstre lænd, balde og baglår. Nogle dage mærkes det også på siden af benet og i foden.
-- **Smertemønster**: Varierende intensitet. Udløses ofte ved aktivitet eller stillesiddende over længere tid.
-- **Dominerende smerte**: Benet generer mest, men patienten klager også over konstant "træthed" i lænden.
+- **Smertemønster**: Varierer hvor ondt det gør. Udløses ofte ved aktivitet eller stillesiddende over længere tid.
+- **Dominerende smerte**: Benet generer mest, men patienten klager også over konstant træthed i lænden.
 - **Følesans/kraft**: Oplever føleforstyrrelser på ydersiden af venstre underben og fodryg, men svært at lokalisere præcist.
 - **Smertetype**: Varierende – både stikkende, trykkende og snurrende.
-- **NRS**: Ben: 5/10, lænd: 5/10.
-- **Debut**: Gradvis debut over 3–4 uger uden kendt udløsende faktor.
-- **Forløb**: Fluktuerende. Ingen klar forbedring trods hvile/aflastning/deltidssygemelding.
+- **NRS**: Ben: 5/10, lænd: 4/10.
+- **Debut**: Gradvis debut over 3–4 uger uden at vide hvad det er kommet af.
+- **Forløb**: Svingende. Ingen klar forbedring trods hvile/aflastning/deltidssygemelding.
 - **Døgnvariation**: Værst sidst på dagen og ved opvågning.
-- **Søvn**: Afbrudt pga. smerter i benet ved vending i sengen.
+- **Søvn**: Vågner pga. smerter i benet ved vending i sengen.
 - **Medicin**: Ipren og Panodil – kortvarig lindring.
 - **Tidligere**: Tilbagevendende lændesmerter i flere år.
 - **Komorbiditet**: Prædiabetes.
 - **Cauda equina syndrom**: Nej.
 - **B-symptomer**: Nej.
-- **Rygning**: ja ca 1 pakke dagligt
-- **Alkohol**: nej
+- **Rygning**: ja ca 1 pakke dagligt.
+- **Alkohol**: Nej.
 
 ## Aktivitet og deltagelse
 
@@ -33,9 +33,10 @@ Din diagnose er: L5 nerverodsirritation pga. lumbal discusprolaps, nedenfor er s
 - **Lindrende**: Bevægelse, stående stilling.
 - **Funktionstab**: Svært ved at køre bil og gå længere ture.
 - **Deltagelse**: Arbejder deltid pga. symptomer. Undgår fritidsaktiviteter.
-- **Styringsbesvær/faldtendens**: Ikke faldet, men føler sig "træt" i benet.
-- **Finmotorik**: Intakt.
+- **Styringsbesvær/faldtendens**: Ikke faldet, men føler sig træt i benet.
+- **Finmotorik**: Normal.
 - **Behandling**: Har modtaget fysioterapi med øvelser og udspænding. Ikke nævneværdig forbedring – føler sig usikker på korrekt udførelse. 
+- **Billeddiagnostik**: Der er ingen billeddiagnostik.
 
 ## Omgivelsesfaktorer
 
@@ -46,9 +47,9 @@ Din diagnose er: L5 nerverodsirritation pga. lumbal discusprolaps, nedenfor er s
 
 ## Personlige faktorer
 
-- **Sygdomsopfattelse**: Usikker på, om det er diskusprolaps eller "noget med iskiasnerven".
-- **Mestring**: Prøver øvelser, men tvivler på effekt. Trækker sig fra belastende situationer.
-- **Bevægeadfærd**: Nedsat fysisk aktivitet.
+- **Sygdomsopfattelse**: Usikker på, om det er diskusprolaps eller noget med iskiasnerven.
+- **Mestring**: Prøver øvelser, men tvivler på at det hjælper. Trækker sig fra belastende situationer.
+- **Bevægeadfærd**: Mindre fysisk aktiv.
 - **Forventninger og mål**: Ønsker svar og plan for behandling.
 
 # Objektiv undersøgelse – L5 nerverodsirritation pga. lumbal discusprolaps (Variant A)
@@ -64,8 +65,8 @@ Din diagnose er: L5 nerverodsirritation pga. lumbal discusprolaps, nedenfor er s
 - **Slump test**: Let provokerende venstre side – udstråling til læg.  
 - **Lhermitte’s test**: Ingen smerter.  
 - **Valsalva’s manøvre**: Let forværring af bensymptomer.  
-- **Motorik**: Let nedsat kraft i venstre m. extensor hallucis longus (EHL) og dorsalfleksion, kraftgrad 4.
-- **Sensorik**: Utydelige hypoæstesier i L5-område venstre side.  
+- **Motorik**: Let nedsat kraft i venstre m. extensor hallucis longus og dorsalfleksion, kraftgrad 4.
+- **Sensorik**: Utydelige hypoæstesier i venstre fodryg og storetå.
 - **Reflekser**: Intet abnormt.  
 - **Ganganalyse**: Lidt stiv gang, men ikke dropfod.  
 - **Balancetest**: Tandemgang let usikker.  
@@ -82,7 +83,7 @@ Din diagnose er: L5 nerverodsirritation pga. lumbal discusprolaps, nedenfor er s
   - Gaenslen’s test: Ingen smerter.  
   - P4 test (Thigh Thrust test): Ingen smerter.  
   - FABER test (Patrick’s test): Ingen smerter. 
-- **Bicycle test**: Let bensymptom ved oprejst cykling. Lindring ved foroverbøjning.  
+- **Bicycle test**: Let bensymptom ved oprejst cykling, lindres ved foroverbøjning.  
 - **Perkussion/vibration af proc. spinosus**: Ingen spinalømhed.  
 - **Heel strike test**: Let ømhed, men ikke udstrålende.  
 - **Plantar respons/Babinski refleks**: Intet abnormt.  

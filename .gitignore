@@ -2,7 +2,7 @@
 .Rhistory
 .RData
 .Renviron
-
+deploy-shiny.ps1
 
 ".Rproj.user/" 
 ".Renviron" 

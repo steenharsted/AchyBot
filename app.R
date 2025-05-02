@@ -1,15 +1,30 @@
 library(shiny)
 library(shinychat)
+library(shinybusy)
 library(bslib)
 library(here)
-library(ellmer)
+library(ellmer)  
 library(stringr)
 
 # List files
 start_prompts <- list.files(here("prompts", "start"), pattern = ".md$", recursive = TRUE) 
 person_prompts <- list.files(here("prompts", "person"), pattern = ".md$", recursive = TRUE) 
 diagnosis_prompts <- list.files(here("prompts", "diagnosis"), pattern = ".md$", recursive = TRUE) 
-feedback_prompts <- list.files(here("prompts", "feedback"), pattern = ".md$", recursive = TRUE) 
+
+generate_prompt_text <- function(){
+  # Make full paths to the files
+  start_path <- here("prompts", "start", sample(start_prompts, 1))
+  person_path <- here("prompts", "person", sample(person_prompts,1))
+  diagnosis_path <- here("prompts", "diagnosis", sample(diagnosis_prompts,1))
+  
+  # Combine the text with spacing
+  str_glue(
+    "{ellmer::interpolate_file(start_path)}  ",
+    "{ellmer::interpolate_file(person_path)}  ",
+    "{ellmer::interpolate_file(diagnosis_path)} "
+  )
+} 
+
 
 ui <- page_fluid(
   theme = bs_theme(version = 5, bootswatch = "cosmo"),
@@ -60,77 +75,19 @@ ui <- page_fluid(
       ),
       card_body(
         p(
-          "Du står over for en ny patient i din kiropraktiske klinik. "
-        ),
-        hr(),
-        p(
-          strong("Dine opgaver:"),
-          tags$ul(
-            tags$li("Optag en grundig anamnese."),
-            tags$li("Planlæg og beskriv relevante kliniske tests."),
-            tags$li("Vurdér testresultater og stil en mulig diagnose.")
-          ),
-          br(),
-          em("Tag dig god tid og brug din viden som kiropraktor til at hjælpe patienten.")
-        )
+          "Dette redskab er tilegnet kiropraktorstuderende, der ønsker at træne anamneseoptagelse, dertilhørende relevante objektive undersøgelser og diagnostisk tankegang. Derudover kan det bruges til at øve udarbejdelse af journaler."),
+        p("Du står overfor en ny patient i din kiropraktiske klinik. Patienten har fået en diagnose og en personlighed, der afspejler en patient, du vil kunne møde i klinisk praksis."),
+        p("Du skal optage en fokuseret anamnese og lave en fokuseret objektiv undersøgelse for at komme frem til diagnosen."),
+        p("Håndter patienten som du ville gøre i praksis. Husk at man I praksis har begrænset tid til anamnese og objektive undersøgelser. Det er ikke muligt at lave parakliniske undersøgelser."),
+        p("Når du vil udføre objektive undersøgelser, skriver du f.eks. 'Jeg laver SBT'. Der vil komme de objektive fund, som du finder i undersøgelsen."),
+        p("Du starter konsultationen ved at præsentere dig selv: 'Hej jeg hedder xx og jeg er din behandler i dag, hvad er dit navn og cpr?'"),
+        p("Når du er kommet frem til diagnosen, så skriver du: 'Diagnosen er xx..'"), 
+        p("Når du har fundet frem til den rigtige diagnose, skal du genindlæse siden for at starte en ny case.")
       )
     ), 
-    card(
-      max_height = "600px",
-      card_header(tags$div("Vælg Prompter", class = "small-font")),
-      card_body(
-        layout_column_wrap(
-          width = 1/5,
-          tags$div(
-            selectInput("start_prompt", "Start Prompt:",
-                        choices = start_prompts,
-                        selected = start_prompts[1]),
-            class = "tiny-font"
-          ),
-          tags$div(
-            selectInput("person_prompt", "Person Prompt:",
-                        choices = person_prompts,
-                        selected = person_prompts[1]),
-            class = "tiny-font"
-          ),
-          tags$div(
-            selectInput("diagnosis_prompt", "Diagnose Prompt:",
-                        choices = diagnosis_prompts,
-                        selected = diagnosis_prompts[1]),
-            class = "tiny-font"
-          ),
-          tags$div(
-            selectInput("model", "Model:",
-                        choices = c("gpt-4o", "gpt-4o-mini", "o3-mini-2025-01-31"),
-                        selected = "gpt-4o"),
-            class = "tiny-font"
-          ),
-          tags$div(
-            selectInput("feedback_prompt", "Feedback:",
-                        choices = c(feedback_prompts),
-                        selected = feedback_prompts[1]),
-            class = "tiny-font"
-          )
-        ),
-        # Card to display the combined text
-        card(
-          max_height = "300px",
-          card_header("System Prompt Preview"),
-          card_body(
-            div(
-              verbatimTextOutput("combined_text"),
-              class = "prompt-preview"
-            )
-          )
-        ),
-        tags$div(
-          actionButton("update_chat", "Tryk her før din skriver i chatten første gang",
-                       class = "btn-primary mt-3")
-        )
-      )
-    )
   ),
   
+
   layout_column_wrap(
     width = "100%",
     chat_ui("chat", 
@@ -142,47 +99,60 @@ server <- function(input, output, session) {
   # Reactive values to store the current chat instance
   rv <- reactiveValues(chat = NULL, chat_id = 0)
   
-  # Function to generate the combined prompt text
-  generate_prompt_text <- reactive({
-    # Make full paths to the files
-    start_path <- here("prompts", "start", input$start_prompt)
-    person_path <- here("prompts", "person", input$person_prompt)
-    diagnosis_path <- here("prompts", "diagnosis", input$diagnosis_prompt)
-    feedback_path <- here("prompts", "feedback", input$feedback_prompt)
+  # Initialize chat when app starts
+  observe({
+    # Only run once at app initialization
+    isolate({
+      if (is.null(rv$chat)) {
+        new_prompt <- generate_prompt_text()
+        rv$chat <- ellmer::chat_openai(
+          model = "gpt-4o",  # Default model
+          system_prompt = new_prompt
+        )
+      }
+    })
+  })
+  
+  # Update chat when start button is clicked
+  observeEvent(input$start_chat, {
+    # Generate a new prompt for a new case
+    new_prompt <- generate_prompt_text()
     
-    # Combine the text with spacing
-    str_glue(
-      "{ellmer::interpolate_file(start_path)}  ",
-      "{ellmer::interpolate_file(person_path)}  ",
-      "{ellmer::interpolate_file(diagnosis_path)} ",
-      "{ellmer::interpolate_file(feedback_path)}"
-    )
-  })
-  
-  # Output for combined text
-  output$combined_text <- renderText({
-    generate_prompt_text()
-  })
-  
-  # Initialize chat when app starts or when prompted
-  create_chat <- function() {
-    ellmer::chat_openai(
+    # Create a new chat instance
+    rv$chat <- ellmer::chat_openai(
       model = input$model,
-      system_prompt = generate_prompt_text()
+      system_prompt = new_prompt
     )
-  }
-  
-  # Update chat when button is clicked
-  observeEvent(input$update_chat, {
-    rv$chat <- create_chat()
+    
+    # Clear the chat history
+    shinychat::chat_reset("chat")
+    
     # Increment the chat_id to trigger a UI refresh
     rv$chat_id <- rv$chat_id + 1
   })
   
+  # Handle user messages with proper error catching
   observeEvent(input$chat_user_input, {
     req(rv$chat)
-    stream <- rv$chat$chat_async(input$chat_user_input)
-    shinychat::chat_append("chat", stream)
+    
+    # Use tryCatch to handle potential errors
+    tryCatch({
+      # Start a busy indicator
+      shinybusy::show_modal_spinner(spin = "cube-grid", text = "Thinking...")
+      
+      # Get chat response
+      stream <- rv$chat$chat_async(input$chat_user_input)
+      shinychat::chat_append("chat", stream)
+      
+      # Hide the busy indicator when done
+      shinybusy::remove_modal_spinner()
+    }, error = function(e) {
+      # Handle error
+      shinybusy::remove_modal_spinner()
+      shinychat::chat_append("chat", 
+                             paste("An error occurred: ", e$message, 
+                                   "\nPlease try again or start a new case."))
+    })
   })
 }
 

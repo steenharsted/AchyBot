@@ -13,15 +13,15 @@ Din diagnose er: Inflammatorisk rygsygdom, nedenfor er specificerede anamnestisk
 - **Lokalisation**: Nedre ryg og bækken.
 - **Smertemønster**: Tiltagende ved aktivitet – men også ubehag i hvile.
 - **Dominerende smerte**: Lænd, føles som træthed.
-- **Følesans/kraft**: Intakt.
+- **Følesans/kraft**: Normal.
 - **Smertetype**: Murrende, træthedsagtig.
 - **NRS**: 4–5/10.
 - **Debut**: Siden ungdommen, men værre de seneste par år.
-- **Forløb**: Langsomt progredierende.
+- **Forløb**: Langsomt tiltagende.
 - **Døgnvariation**: Ikke tydelig, men nævner stivhed ved opstart.
 - **Søvn**: Vågner tidligt pga. uro og smerte.
 - **Medicin**: Ibuprofen – virker delvist.
-- **Tidligere**: Ingen kendt rygdiagnose. Har ofte fået at vide det "nok er holdningsrelateret".
+- **Tidligere**: Ingen kendt sygdom. Har ofte fået at vide at rygproblemerne nok er holdningsrelaterede.
 - **Komorbiditet**: Ingen kendte.
 - **Familiære dispositioner**: Far med psoriasis. Mor med diskusprolaps i 50’erne.
 - **Cauda equina syndrom**: Nej.
@@ -33,19 +33,20 @@ Din diagnose er: Inflammatorisk rygsygdom, nedenfor er specificerede anamnestisk
 - **Lindrende**: Let bevægelse, varme.
 - **Funktionstab**: Nedsat arbejdsevne – sygemeldt deltid.
 - **Deltagelse**: Begrænset fritid og aktivitet.
-- **Behandling**: Fik massage og manuelle behandlinger uden varig effekt. Har fået generiske øvelser uden fokus på mobilitet. Effekten af NSAID er delvis. Patienten føler sig ikke hørt.
+- **Behandling**: Jeg har fået massage og behandling med hænderne, men det har ikke givet en varig effekt. Jeg har også fået nogle generelle øvelser, men de har ikke rigtig haft fokus på at få kroppen til at bevæge sig bedre.  Smertestillende medicin som Ibuprofen hjælper lidt, men ikke helt. Jeg føler ikke rigtig, at jeg er blevet lyttet til.
+- **Billeddiagnostik**: Der er ingen billeddiagnostik.
 
 ## Omgivelsesfaktorer
 
 - **Bolig**: Parcelhus, bor med ægtefælle.
 - **Familie**: Ægtefælle og 2 børn.
 - **Socialt**: Lav deltagelse, træthed forhindrer aktiviteter.
-- **Erhverv**: Tidligere håndværker, nu deltid i let job.
+- **Erhverv**: Tidligere håndværker, nu deltid i kontorjob.
 
 ## Personlige faktorer
 
-- **Sygdomsopfattelse**: Tror det er “slid” og dårlig kropsholdning.
-- **Mestring**: Lav – frustreret og opgivende.
+- **Sygdomsopfattelse**: Tror det er slid og dårlig kropsholdning.
+- **Mestring**: Frustreret og opgivende.
 - **Bevægeadfærd**: Inaktiv – føler sig for træt og stiv.
 - **Forventninger og mål**: Vil gerne kunne arbejde og være fysisk aktiv igen.
 
@@ -70,9 +71,9 @@ Din diagnose er: Inflammatorisk rygsygdom, nedenfor er specificerede anamnestisk
 - **Minor’s sign**: Intet abnormt.  
 - **Kemp’s test**: Let ubehag ved lateral fleksion bilateralt.  
 - **Prone segmental instability test**: Ingen forskel.  
-- **Modificeret Schober**: 3 cm (nedsat).  
-- **Thorax ekspansion**: 3,5 cm (let nedsat).  
-- **Nakke-væg afstand**: 6 cm.  
+- **Modificeret Schober**: 3 cm  
+- **Thorax ekspansion**: 3,5 cm 
+- **Nakke-væg afstand**: 3 cm.  
 - **SI-led tests**:  
   - Kompressionstest: Let provokerende bilateralt.  
   - Distraktionstest: Ingen ubehag.  
@@ -85,3 +86,4 @@ Din diagnose er: Inflammatorisk rygsygdom, nedenfor er specificerede anamnestisk
 - **Heel strike test**: Ingen smerter.  
 - **Plantar respons/Babinski refleks**: Intet abnormt.  
 - **Test for klonus**: Intet abnormt.  
+

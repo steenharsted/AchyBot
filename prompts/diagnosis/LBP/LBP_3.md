@@ -1,27 +1,26 @@
-
 Din diagnose er: Uspecifikke lænderygsmerter / piriformis syndrom, nedenfor er specificerede anamnestiske oplysninger og objektive undersøgelser, der skal bruges i casen, hvis det er relevant. Spørges der til oplysninger, der ikke er specificerede i nedenstående liste, må du improvisere inden for casens rammer. 
 
 # Anamnese – Uspecifikke lænderygsmerter / Piriformis syndrom
 
 ## Hovedklage
 
-- Smerter dybt i sædeområdet med udstråling ned i benet, især ved siddende stilling og trappegang.
+- Smerter i sædeområdet med udstråling ned i benet.
 
 ## Uddybende oplysninger
 
-- **Lokalisation**: Dybt glutealt, primært venstresidigt. Udstråling til baglår og læg, uden nedsat kraft.
+- **Lokalisation**: I balden, primært venstresidigt. Udstråling til baglår og læg.
 - **Smertemønster**: Forværres ved længere siddetid, især i bil og på hårde stole. Lindres ved bevægelse og udspænding.
 - **Dominerende smerte**: Sædeområdet – beskriver det som trykkende og murrende med jag ved opstart af gang.
-- **Følesans/kraft**: Ingen objektive udfald, men oplever træthed og “tunghed” i benet.
+- **Følesans/kraft**: Oplever træthed og tunghed i benet.
 - **Smertetype**: Dyb, trykkende, skærende ved provokation.
 - **NRS**: 7/10 efter længere siddetid, 2/10 i hvile.
-- **Debut**: Opstod gradvist for 6 måneder siden efter en periode med øget løbetræning.
+- **Debut**: Opstod gradvist for 3 måneder siden efter en periode med øget løbetræning.
 - **Forløb**: Svingende. Bedre efter hvileperiode, men tilbagevendende ved aktivitet.
 - **Døgnvariation**: Værst sidst på dagen og efter længere kørsel eller kontorarbejde.
 - **Søvn**: Vågner lejlighedsvis ved vending; generes ved at ligge på venstre side.
-- **Medicin**: Ibuprofen p.n. – moderat effekt. Forsøgt Panodil uden nævneværdig virkning.
-- **Tidligere**: Ikke tidligere lignende smerter. Ingen kendt rygsygdom.
-- **Komorbiditet**: Ingen systemiske sygdomme. Tidligere løber, inaktiv de seneste måneder.
+- **Medicin**: Ibuprofen p.n. – moderat effekt. Forsøgt Panodil uden den store effekt.
+- **Tidligere**: Ikke tidligere lignende smerter. 
+- **Komorbiditet**: Ingen kendte sygdomme. Tidligere løber, inaktiv de seneste måneder.
 - **Cauda equina syndrom**: Nej.
 - **B-symptomer**: Nej.
 
@@ -32,8 +31,9 @@ Din diagnose er: Uspecifikke lænderygsmerter / piriformis syndrom, nedenfor er 
 - **Funktionstab**: Nedsat evne til at deltage i sport (løb, fitness). Har afmeldt sig fra motionsløb.
 - **Deltagelse**: Begrænset deltagelse i sociale aktiviteter med længere stillesiddende karakter (biograf, kørsel, møder).
 - **Styringsbesvær/faldtendens**: Nej, men oplever ubalance/ubehag ved ensidige bevægelser.
-- **Finmotorik**: Intakt.
-- **Behandling**: Har modtaget fysioterapi bestående af manuel behandling (bløddelsbehandling af piriformis og udspænding), samt stabiliserende øvelser for hofte- og bækkenmuskulatur. Derudover forsøgt dry needling og udspændingsprogram til hjemmebrug. Effekten har været moderat: Oplevede tydelig lindring efter behandling, men symptomerne vender tilbage ved belastning. Har forsøgt at genoptage løb, men måtte stoppe pga. tilbagefald. Bruger nu dagligt foam roller, udspænding og varme med delvis lindrende effekt.
+- **Finmotorik**: Normal
+- **Behandling**: Jeg har fået fysioterapi, hvor jeg blev behandlet med hænderne – især omkring baldemusklerne – og fik lavet stræk. Derudover lavede jeg øvelser for at styrke musklerne omkring hofte og bækken. Jeg har også prøvet dry needling og fået et udspændingsprogram til hjemmebrug. Behandlingen har hjulpet til en vis grad – jeg mærkede tydelig lindring efter behandlingerne, men smerterne kommer tilbage, når jeg belaster området. Jeg prøvede at begynde at løbe igen, men måtte stoppe, fordi symptomerne kom tilbage. Nu bruger jeg dagligt en foam roller, laver udspænding og bruger varme – det lindrer noget, men ikke helt.
+- **Billeddiagnostik**: Der er ingen billeddiagnostik.
 
 ## Omgivelsesfaktorer
 
@@ -85,3 +85,4 @@ Din diagnose er: Uspecifikke lænderygsmerter / piriformis syndrom, nedenfor er 
 - **Heel strike test**: Ingen smerter.  
 - **Plantar respons/Babinski refleks**: Intet abnormt.  
 - **Test for klonus**: Intet abnormt.
+

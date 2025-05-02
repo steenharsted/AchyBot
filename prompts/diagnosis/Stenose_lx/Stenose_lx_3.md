@@ -11,13 +11,13 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 
 - **Alder**: 69 år
 - **Lokalisation**: Lænd og højre ben, primært forsiden af låret.
-- **Smertemønster**: Ikke entydigt belastningsudløst – kan komme ved stillesiddende arbejde.
+- **Smertemønster**: Ikke sikker på om det skyldes belastning, kan komme ved stillesiddende arbejde.
 - **Dominerende smerte**: Lændesmerter dominerer, men bensymptomer generer også.
-- **Følesans/kraft**: Oplever “svaghed” i højre ben, men normal test af kraft og sensibilitet.
+- **Følesans/kraft**: Oplever “svaghed” i højre ben
 - **Smertetype**: Stikkende og brændende i låret, stivhed i lænd.
 - **NRS**: Lænd 5/10, ben 3/10.
 - **Debut**: Opstået gradvist over det sidste halve år.
-- **Forløb**: Fluktuerende. Dårligere efter længere stillesiddende perioder.
+- **Forløb**: Smerterne kommer og går. Dårligere efter længere stillesiddende perioder.
 - **Døgnvariation**: Værst om morgenen og efter kontorarbejde.
 - **Søvn**: Sover fint, men vågner nogle dage med stivhed.
 - **Medicin**: Bruger ibuprofen og varmepude – hjælper delvist.
@@ -33,8 +33,13 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 - **Funktionstab**: Klarer hverdagen, men undgår længere gåture og sportsaktiviteter.
 - **Deltagelse**: Deltager stadig i arbejde (kontor) og lidt socialt.
 - **Styringsbesvær/faldtendens**: Nej.
-- **Finmotorik**: Intakt.
-- **Behandling**: Har fået fysioterapi bestående af stabiliserende øvelser, mobilisering af lænderyggen og holdtræning. Effekt delvis – oplevede bedring i fleksibilitet og stivhed, men bensymptomerne er stort set uændrede. Har fået akupunktur to gange uden mærkbar effekt. Bruger varmepude, som lindrer lændesmerterne midlertidigt. Smertestillende medicin (ibuprofen) anvendes lejlighedsvis, men med begrænset virkning. Patienten forsøger at holde sig i gang med hjemmeøvelser, men har svært ved at være konsekvent.
+- **Finmotorik**: Normal.
+- **Behandling**: Jeg har fået fysioterapi, hvor jeg lavede øvelser for at stabilisere ryggen, fik løsnet op i lænden og deltog i holdtræning. Det har hjulpet lidt – jeg føler mig mere smidig og mindre stiv, men smerterne ned i benet er stort set de samme.  
+Jeg har også prøvet akupunktur to gange, men det havde ingen tydelig effekt.  
+Jeg bruger en varmepude, som lindrer smerterne i lænden midlertidigt. Jeg tager nogle gange smertestillende (ibuprofen), men det hjælper kun lidt.  
+Jeg prøver at lave øvelser derhjemme for at holde mig i gang, men det er svært at få det gjort regelmæssigt.
+
+- **Billeddiagnostik**: Der er ingen billeddiagnostik.
 
 ## Omgivelsesfaktorer
 
@@ -45,7 +50,7 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 
 ## Personlige faktorer
 
-- **Sygdomsopfattelse**: Bekymret for at “prolapsen er kommet igen”.
+- **Sygdomsopfattelse**: Bekymret for at prolapsen er kommet igen.
 - **Mestring**: Motiveret for øvelser og livsstilsændring, men mangler energi.
 - **Bevægeadfærd**: Prøver at lave hjemmeøvelser, men er inaktiv på jobbet.
 - **Forventninger og mål**: Ønsker at kunne gå ture og træne igen uden ubehag.
@@ -73,7 +78,7 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 - **Minor’s sign**: Rejser sig fint fra stolen.  
 - **Kemp’s test**: Let provokerende hø. ved ekstension/lateral fleksion.  
 - **Prone segmental instability test**: Ingen forskel.  
-- **Modificeret Schober**: 8 cm. 
+- **Modificeret Schober**: 6 cm. 
 - **Thorax ekspansion**: 6 cm.  
 - **Nakke-væg afstand**: 2 cm.  
 - **SI-led tests**:  
@@ -88,3 +93,4 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 - **Heel strike test**: Ingen smerter.  
 - **Plantar respons/Babinski refleks**: Intet abnormt.  
 - **Test for klonus**: Intet abnormt.
+

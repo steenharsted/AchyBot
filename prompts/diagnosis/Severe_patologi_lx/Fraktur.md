@@ -5,43 +5,46 @@ Din diagnose er: Ustabil lumbal fraktur, nedenfor er specificerede anamnestiske 
 
 ## Hovedklage
 
-- Pludseligt indsættende intense lændesmerter efter fald fra stige. Kan ikke rette ryggen og har svært ved at bevæge sig. Desuden intermitterende bensmerter.
+- Pludseligt indsættende intense lændesmerter efter fald fra stige. Kan ikke rette ryggen og har svært ved at bevæge sig. Desuden anfaldsvise bensmerter.
 
 ## Uddybende oplysninger
 
-- **Lokalisation**: Lænd, centreret omkring L1–L3-regionen.
+- **Lokalisation**: Lænd, værst omkring øvre lænderyg. Til tider mærkes der smerter i begge ben.
 - **Smertemønster**: Konstant, skarp og intens smerte. Forværres ved bevægelse eller belastning.
-- **Dominerende smerte**: Lokal lændesmerte. Ingen udstråling til ben.
-- **Følesans/kraft**: Normal i UE, men kraftigt bevægehæmmet pga. smerter.
+- **Dominerende smerte**: Lokal lændesmerte. 
+- **Følesans/kraft**: Normal, men kan stort set ikke bevæge sig pga. smerter.
 - **Smertetype**: Skarp, stikkende og trykkende smerte dybt i ryggen.
 - **NRS**: Lænd: 8–9/10 ved bevægelse, 5/10 i hvile. Ben 4/10.
-- **Debut**: Akut debut efter fald fra ca. 2 meters højde ned på bagdelen for 5 dage siden.
-- **Forløb**: Uændret smerteintensitet, tilkommet muskelspændinger og nedsat mobilitet.
-- **Døgnvariation**: Konstant høj intensitet – ingen lindring ved hvile.
-- **Søvn**: Svært ved at finde en stilling uden smerte. Sover afbrudt.
+- **Debut**: Akut debut efter fald fra ca. 2 meters højde ned på bagdelen for 2 dage siden.
+- **Forløb**:  Det har været konstante smerter i lænden, men med vekslende smerter i benene.
+- **Døgnvariation**: Konstant høj intensitet.
+- **Søvn**: Svært ved at finde en stilling uden smerte. Vågner pga. smerter.
 - **Medicin**: Ibuprofen og paracetamol – utilstrækkelig effekt.
-- **Tidligere**: Ingen kendt osteoporose, men lav BMI og rygning.
-- **Komorbiditet**: Astma, tidligere lavenergifraktur i håndled. Ryger.
-- **Familiære dispositioner**: Mor med osteoporose og lavenergifrakturer. 
+- **Tidligere**: Ingen kendt sygdom.
+- **Ryger**: Ja
+- **Alkohol**: Et par genstande om ugen.
+- **Komorbiditet**: Astma, tidligere brækket håndled. 
+- **Familiære dispositioner**: Mor med osteoporose. 
 - **Cauda equina syndrom**: Nej.
 - **B-symptomer**: Nej.
 
 ## Aktivitet og deltagelse
 
-- **Forværrende**: Alle former for bevægelse, host, nys.
-- **Lindrende**: Ligger mest muligt fladt eller let bagoverbøjet. Smerteforværring ved foroverbøjning.
-- **Funktionstab**: Har brug for hjælp til ADL. Kan ikke rejse sig uden støtte.
-- **Deltagelse**: Ophørt med al aktivitet. Immobiliseret i hjemmet, afventer behandling.
-- **Styringsbesvær/faldtendens**: Nej – faldet skyldtes ydre årsag. Ingen neurologisk påvirkning.
-- **Finmotorik**: Intakt.
+- **Forværrende**: Alle former for bevægelse, især foroverbøjning, host, nys.
+- **Lindrende**: Ligger mest muligt fladt eller let bagoverbøjet. 
+- **Funktionstab**: Har brug for hjælp til at klare de almindelige hverdagsting. Kan ikke rejse sig uden støtte.
+- **Deltagelse**: Kan ikke andet end bare at være derhjemme.
+- **Styringsbesvær/faldtendens**: Nej.
+- **Finmotorik**: Normal.
 - **Behandling**: Har ikke været i tidligere behandling.
+- **Billeddiagnostik**: Der er ingen billeddiagnostik.
 
 ## Omgivelsesfaktorer
 
 - **Bolig**: Bor i etplanshus, adgang med rollator. Partner hjælper.
 - **Familie**: Gift, voksne børn. Godt netværk.
-- **Socialt**: Isoleret pga. immobilitet, tidligere aktiv i lokalforening.
-- **Erhverv**: Selvstændig – midlertidigt lukket ned pga. skaden.
+- **Socialt**: Isoleret pga. immobilitet.
+- **Erhverv**: Selvstændig. 
 
 ## Personlige faktorer
 
@@ -53,7 +56,7 @@ Din diagnose er: Ustabil lumbal fraktur, nedenfor er specificerede anamnestiske 
 # Objektiv undersøgelse – Ustabil lumbal fraktur
 
 - **Inspektion**: Reduceret bevægelse i columna. Antalgisk holdning og stiv gang.  
-- **ROM**: Meget nedsat i alle planer. Ekstension umulig pga. smerter.  
+- **ROM**: Meget nedsat i alle planer pga. smerter. 
 - **Palpation**: Udtalt dyb ømhed og forsvar i midtlinje over L2. Muskelspændinger i paraspinale muskler.  
 - **SLR/SBT (strakt benløft test)**: Ingen udstråling.  
 - **Krydset SLR**: Ingen udstråling.  
@@ -66,7 +69,7 @@ Din diagnose er: Ustabil lumbal fraktur, nedenfor er specificerede anamnestiske 
 - **Motorik**: Intet abnormt..  
 - **Sensorik**: Intet abnormt.  
 - **Reflekser**: Intakte.  
-- **Ganganalyse**: Kun mulig med ganghjælpemiddel. Langsom og forsigtig.  
+- **Ganganalyse**: Kun muligt med ganghjælpemiddel. Langsom og forsigtig.  
 - **Balancetest**: Ikke muligt at gennemføre pga. smerte.  
 - **Minor’s sign**: Rejser sig langsomt og med støtte.  
 - **Kemp’s test**: Kan ikke gennemføres, da det er for smertefuldt.  
@@ -86,3 +89,4 @@ Din diagnose er: Ustabil lumbal fraktur, nedenfor er specificerede anamnestiske 
 - **Heel strike test**: Forværrer dyb rygsmerte.  
 - **Plantar respons/Babinski refleks**: Intet abnormt.  
 - **Test for klonus**: Intet abnormt.
+

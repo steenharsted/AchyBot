@@ -5,37 +5,38 @@ Din diagnose er: Inflammatorisk rygsygdom, nedenfor er specificerede anamnestisk
 
 ## Hovedklage
 
-- Stivhed og smerter i lænden og bækkenet, især om morgenen. Lindres ved bevægelse.
+- Stivhed og smerter i lænden og bækkenet. 
 
 ## Uddybende oplysninger
 
 - **Alder**: 27 år
-- **Lokalisation**: Nedre lænd, sakroiliakaled og glutealregion bilateralt.
+- **Lokalisation**: Nedre lænd, bækken og balder bilateralt.
 - **Smertemønster**: Snigende debut, værst om morgenen og ved hvile. Lindring ved bevægelse.
-- **Dominerende smerte**: Dyb, borende smerte i SI-led og lænd.
-- **Følesans/kraft**: Intakt.
+- **Dominerende smerte**: Dyb, borende smerte i bækkenet og lænd.
+- **Følesans/kraft**: Normal.
 - **Smertetype**: Dyb, stivhedsfornemmelse og borende ømhed.
 - **NRS**: Lænd 6/10 om morgenen, 2/10 efter opvarmning.
 - **Debut**: For 3 år siden, startede gradvist i 20’erne.
-- **Forløb**: Kronisk med variationer – har haft flere “flair-ups”.
+- **Forløb**: Længere varende med variationer – har haft flere opblusninger.
 - **Døgnvariation**: Værst om morgenen (morgenstivhed >1 time), forbedres i løbet af dagen.
 - **Søvn**: Vågner ofte i den anden halvdel af natten pga. smerter. Må rejse sig for lindring
-- **Medicin**: Bruger NSAID fast – god effekt.
-- **Tidligere**: Iridocyclit tidligere.
-- **Komorbiditet**: Ingen autoimmune lidelser af hvad patienten kender til.
+- **Medicin**: Bruger Ibuprofen – god effekt.
+- **Tidligere**: Regnbuehindebetændelse tidligere.
+- **Komorbiditet**: Ingen kendt sygdom.
 - **Familiære dispositioner**: Far har psoriasis og onkel med Mb. Crohn.
 - **Cauda equina syndrom**: Nej.
 - **B-symptomer**: Let vægttab, træthed, natlig svedtendens.
 
 ## Aktivitet og deltagelse
 
-- **Forværrende**: Inaktivitet, stillesiddende arbejde.
+- **Forværrende**: Hvile, stillesiddende arbejde.
 - **Lindrende**: Bevægelse, træning, varme.
 - **Funktionstab**: Morgenrutiner og at stå op for f.eks. at tisse om natten er besværligt. Har det godt med sport, dog ikke for lang tid af gangen.
 - **Deltagelse**: Fortsat i arbejde, men reduceret træning og sociale aktiviteter.
 - **Styringsbesvær/faldtendens**: Nej.
-- **Finmotorik**: Intakt.
-- **Behandling**: Har gået til fysioterapi med fokus på bevægelighedstræning og holdningskorrektion, hvilket opleves som gavnligt. Øvelser og bevægelse har en tydelig positiv effekt på stivhed og humør.
+- **Finmotorik**: Normal.
+- **Behandling**: Jeg har gået til fysioterapi, hvor vi arbejdede med at forbedre min bevægelighed og rette op på min kropsholdning. Det har jeg oplevet som noget, der har hjulpet mig. Øvelserne og det at holde mig i gang har en tydelig god effekt – det mindsker stivheden og gør mig i bedre humør.
+- **Billeddiagnostik**: Der er ingen billeddiagnostik.
 
 ## Omgivelsesfaktorer
 
@@ -72,19 +73,19 @@ Din diagnose er: Inflammatorisk rygsygdom, nedenfor er specificerede anamnestisk
 - **Minor’s sign**: Intet abnormt.  
 - **Kemp’s test**: Let provokerende bilateralt.  
 - **Prone segmental instability test**: Ingen forskel.  
-- **Modificeret Schober**: <4 cm udvidelse.  
+- **Modificeret Schober**: 3 cm.  
 - **Thorax ekspansion**: 4 cm.  
 - **Nakke-væg afstand**: 5 cm.  
 - **SI-led tests**:  
-  - *Kompressionstest*: Lokale smerter bilateralt.  
-  - *Distraktionstest*: Let ubehag.  
-  - *Sacral apex pressure test*: Let ømhed.  
-  - *Gaenslen’s test*: Reproducerer kendte smerter bilateralt.  
-  - *P4 test (Thigh Thrust test)*: Reproducerer kendte smerter bilateralt.  
-  - *FABER test (Patrick’s test)*: Smerter bilateralt – kendt smerte glutealt.  
+  - Kompressionstest: Lokale smerter bilateralt.  
+  - Distraktionstest: Let ubehag.  
+  - Sacral apex pressure test: Let ømhed.  
+  - Gaenslen’s test: Reproducerer kendte smerter bilateralt.  
+  - P4 test (Thigh Thrust test): Reproducerer kendte smerter bilateralt.  
+  - FABER test (Patrick’s test): Smerter bilateralt – kendt smerte glutealt.  
 - **Bicycle test**: Intet abnormt.  
 - **Perkussion/vibration af proc. spinosus**: Let ømhed sacroilicalt.  
 - **Heel strike test**: Intet abnormt.  
-- **Babinski refleks**: Intet abnormt.  
+- **Plantar respons/Babinski refleks**: Intet abnormt.  
 - **Test for klonus**: Intet abnormt.  
 

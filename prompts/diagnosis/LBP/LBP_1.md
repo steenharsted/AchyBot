@@ -5,54 +5,57 @@ Din diagnose er: Uspecifikke lænderygsmerter / lumbalt facetledssyndrom, nedenf
 
 ## Hovedklage
 
-- Lokaliserede lændesmerter, især ved bagudbøjning og rotation. Ingen bensymptomer.
+- Lændesmerter, især ved bagudbøjning og rotation.
 
 ## Uddybende oplysninger
 
-- **Lokalisation**: Nedre lænd, mest paraspinalt højresidigt.
-- **Smertemønster**: Mekaniske smerter relateret til bevægelse og stilling.
-- **Dominerende smerte**: Lokal smerte i lænden – ingen udstråling.
+- **Lokalisation**: Nedre lænd, mest højresidigt. (Ingen udstråling)
+- **Smertemønster**: Smerter relateret til bevægelse og stilling.
+- **Dominerende smerte**: Lokal smerte i lænden.
 - **Følesans/kraft**: Normal.
 - **Smertetype**: Murrende, skærende ved visse bevægelser.
 - **NRS**: Lænd 5/10 ved aktivitet, 1–2/10 i hvile.
 - **Debut**: Kom akut for 4 måneder siden efter løft på arbejde – derefter svingende forløb.
-- **Forløb**: Varierende – gode og dårlige dage. Øget ved fysisk belastning.
+- **Forløb**: Varierende – gode og dårlige dage.
 - **Døgnvariation**: Værst om morgenen og efter stillesiddende arbejde.
-- **Søvn**: Kan finde en god stilling og sove igennem. Enkelte nætter med opvågning pga. smerter ved vending.
+- **Søvn**: Kan finde en god stilling og sove igennem. Enkelte nætter vågner op pga. smerter ved vending.
 - **Medicin**: Ibuprofen p.n. – moderat effekt.
 - **Tidligere**: Har haft lændesmerter før i perioder, men ikke så langvarigt.
-- **Komorbiditet**: Ingen relevante. Ikke rygere.
+- **Komorbiditet**: Ingen.
 - **Cauda equina syndrom**: Nej.
 - **B-symptomer**: Nej.
+- **Ryger**: Nej
+- **Alkohol**: Et par genstande om ugen.
 
 ## Aktivitet og deltagelse
 
-- **Forværrende**: Ekstension, rotation, tunge løft, stillesiddende over længere tid.
-- **Lindrende**: Let bevægelse, varme, undgåelse af provokerende stillinger.
+- **Forværrende**: Bagoverbøjning, dreje overkroppen, tunge løft, stillesiddende over længere tid.
+- **Lindrende**: Let bevægelse, varme.
 - **Funktionstab**: Begrænsninger ift. fysisk arbejde, gør færre huslige opgaver.
-- **Deltagelse**: Mindre aktiv i fritid (ingen løb, begrænset havearbejde).
+- **Deltagelse**: Mindre aktiv i fritid. Ingen løb, begrænset havearbejde.
 - **Styringsbesvær/faldtendens**: Nej.
-- **Finmotorik**: Intakt.
-- **Behandling**: Har gennemgået individuel fysioterapi med manuel ledmobilisering og øvelser rettet mod stabilitet og bevægelighed. Derudover fået instruktion i hjemmeøvelser og ergonomi. Effekten har været moderat – patienten oplever lindring efter behandling og føler sig generelt bedre efter træning, men får tilbagefald ved for høj belastning. Har forsøgt zoneterapi uden effekt. Anvender varmepude og udspændingsøvelser dagligt, hvilket giver lettelse. Ønsker at genoptage motion uden at “falde tilbage”.
+- **Finmotorik**: Normal
+- **Behandling**: Har været ved fysioterapeut, der har lavet noget stræk og nogle øvelser for at give stabilitet og bevægelighed. Derudover fået instruktion i hjemmeøvelser og ergonomi. Effekten har været moderat – patienten oplever lindring efter behandling og føler sig generelt bedre efter træning, men får tilbagefald ved for meget aktivitet. Har forsøgt zoneterapi uden effekt. Anvender varmepude og udspændingsøvelser dagligt, hvilket giver lettelse. Ønsker at genoptage motion uden at “falde tilbage”.
+- **Billeddiagnostik**: Der er ingen billeddiagnostik.
 
 ## Omgivelsesfaktorer
 
 - **Bolig**: Rækkehus med trapper.
 - **Familie**: Gift, to børn. Støttende ægtefælle.
 - **Socialt**: Har aktivt netværk, men deltager mindre end tidligere.
-- **Erhverv**: Lagerarbejder – pt. sygemeldt deltid og i kontakt med egen læge og fysioterapeut.
+- **Erhverv**: Lagerarbejder – pt. sygemeldt deltid.
 
 ## Personlige faktorer
 
-- **Sygdomsopfattelse**: Ser det som en “slid-ting”, men er motiveret for at få det bedre.
-- **Mestring**: Rimeligt coping-niveau. Bruger aktiv strategi og forsøger at følge anbefalinger.
+- **Sygdomsopfattelse**: Ser det som en slid-ting, men er motiveret for at få det bedre.
+- **Mestring**: Forsøger at følge anbefalinger.
 - **Bevægeadfærd**: Aktivt undvigende over for provokerende bevægelser, men ellers fysisk aktiv.
 - **Forventninger og mål**: Vil gerne tilbage i fuldt arbejde og kunne være aktiv med familien uden konstant at skulle tage hensyn til ryggen.
 
 # Objektiv undersøgelse – Uspecifikke lænderygsmerter / Lumbalt facetledssyndrom
 
 - **Inspektion**: Let nedsat lændelordose, ingen strukturelle deformiteter.  
-- **ROM**: Nedsat ekstension og rotation, provokerer smerter paraspinalt. Fleksion OK.  
+- **ROM**: Nedsat ekstension og rotation, provokerer smerter paraspinalt.  
 - **Palpation**: Lokal ømhed over lumbale facetled (L4–S1), især højresidigt. Ømhed i m. erector spinae.  
 - **SLR/SBT (strakt benløft test)**: Ingen udstråling.  
 - **Krydset SLR**: Ingen udstråling.  
@@ -85,3 +88,4 @@ Din diagnose er: Uspecifikke lænderygsmerter / lumbalt facetledssyndrom, nedenf
 - **Heel strike test**: Ingen smerter.  
 - **Plantar respons/Babinski refleks**: Intet abnormt.  
 - **Test for klonus**: Intet abnormt.
+

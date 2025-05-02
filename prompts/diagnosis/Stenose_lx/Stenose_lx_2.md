@@ -8,21 +8,20 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 - Træthed og diffus ømhed i benene efter kort tids gang, føles som "mælkesyre". Har svært ved at vurdere om det kommer fra ryggen eller benene.
 
 ## Uddybende oplysninger
-
 - **Alder**: 65 år.
-- **Lokalisation**: Glutealt og udstråling til læggene. Ingen udstråling til lår.
+- **Lokalisation**: Balderne med udstråling til læggene. Ingen udstråling til lår.
 - **Smertemønster**: Udløses ved gang og stående stilling, bedres lidt ved pause – ikke nødvendigvis siddende.
 - **Dominerende smerte**: Benene, især træthed og tyngdefornemmelse.
-- **Følesans/kraft**: Ingen sikre udfald, men føler sig "svag" i benene ved længere belastning.
+- **Følesans/kraft**: Har ikke bemærket ændringer, men føler sig "svag" i benene ved længere belastning.
 - **Smertetype**: Træthedsfornemmelse evt. snurrende.
 - **NRS**: Ben 4–5/10 ved gang, 1/10 i hvile. Lænd 1/10.
 - **Debut**: Snigende, over ca. 1 år.
 - **Forløb**: Langsomt tiltagende, nu dagligt generende.
 - **Døgnvariation**: Værst ved aktivitet midt/sidst på dagen.
 - **Søvn**: Ingen natlige smerter, sover godt.
-- **Medicin**: Har prøvet Gigtmedicin og Panodil – minimal effekt. Får blodfortyndende medicin efter blodprop. 
+- **Medicin**: Har prøvet gigtmedicin og panodil – Lille effekt. Får blodfortyndende medicin efter blodprop. 
 - **Tidligere**: Tidligere iskiassmerter i venstre ben for flere år siden, som gik i sig selv igen. Behandlet ved kiropraktor med god effekt.
-- **Komorbiditet**: Let overvægt, hypertension. Tidligere blodprop, ingen mén af dette.
+- **Komorbiditet**: Forhøjet blodtryk. Tidligere blodprop, ingen mén af dette.
 - **Cauda equina syndrom**: Nej.
 - **B-symptomer**: Ingen.
 - **Ryger**: ja
@@ -32,11 +31,12 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 
 - **Forværrende**: Gang på fladt underlag, trapper.
 - **Lindrende**: Pause. Ikke klart bedret ved siddestilling.
-- **Funktionstab**: Begrænset gangdistance (ca. 200–300 meter). Undgår gåture.
+- **Funktionstab**: Kan maks gå ca. 200–300 meter. Undgår gåture.
 - **Deltagelse**: Deltager mindre i sociale aktiviteter. Ikke aktiv i foreningsliv længere.
 - **Styringsbesvær/faldtendens**: Let balanceusikkerhed ved hurtige vendinger.
-- **Finmotorik**: Intakt.
-- **Behandling**: Har forsøgt fysioterapi (manuel behandling og udspænding) uden mærkbar effekt. Blev instrueret i hjemmeøvelser, men har ikke været konsekvent. Har forsøgt varmeomslag og let massage, som giver kortvarig lindring.
+- **Finmotorik**: Normal.
+- **Behandling**: Har forsøgt fysioterapi (massage og udspænding) uden bedring. Blev instrueret i hjemmeøvelser, men har ikke været konsekvent. Har forsøgt varmeomslag og let massage, som giver kortvarig lindring.
+- **Billeddiagnostik**: Der er ingen billeddiagnostik.
 
 ## Omgivelsesfaktorer
 
@@ -47,7 +47,7 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 
 ## Personlige faktorer
 
-- **Sygdomsopfattelse**: Tror det er “noget med benene” – måske dårlig blodcirkulation?
+- **Sygdomsopfattelse**: Tror det er noget med benene – måske dårlig blodcirkulation?
 - **Mestring**: Let opgivende, prøver ikke længere at motionere.
 - **Bevægeadfærd**: Meget stillesiddende.
 - **Forventninger og mål**: Vil gerne kunne gå en tur med ægtefællen igen uden at skulle stoppe hele tiden. 
@@ -58,7 +58,7 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 - **BMI**: 40
 - **Palpapel puls**: Svag puls i a. dorsalis pedis bilateralt
 - **Inspektion**: Ingen deformitet, normal kropsholdning.  
-- **ROM**: Ekstension let nedsat og lidt generende i ryg.  
+- **ROM**: Ekstension let nedsat og lidt generende i ryg.
 - **Palpation**: Lokal ømhed paraspinalt L3–S1.  
 - **SLR/SBT (strakt benløft test)**: Ikke provokerende.  
 - **Krydset SLR**: Ikke provokerende.  
@@ -76,7 +76,7 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 - **Minor’s sign**: Svagt positiv – bruger hænderne lidt ved oprejsning.  
 - **Kemp’s test**: Ikke klart provokerende.  
 - **Prone segmental instability test**: Ingen forskel.  
-- **Modificeret Schober**: 8 cm. 
+- **Modificeret Schober**: 4 cm. 
 - **Thorax ekspansion**: 6 cm.  
 - **Nakke-væg afstand**: 3 cm.  
 - **SI-led tests**:  
@@ -91,3 +91,4 @@ Din diagnose er: Lumbal central spinalstenose, nedenfor er specificerede anamnes
 - **Heel strike test**: Ingen smerte.  
 - **Plantar respons/Babinski refleks**: Intet abnormt.  
 - **Test for klonus**: Intet abnormt.
+
