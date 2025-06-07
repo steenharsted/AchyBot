@@ -314,7 +314,7 @@ ui <- page_fluid(
       card_header(
         div(
           style = "display: flex; justify-content: space-between; align-items: center;",
-          tags$div("Patient Consultation", style = "font-weight: 600; color: #2C3E50;"),
+          tags$div("Patient Konsultation", style = "font-weight: 600; color: #2C3E50;"),
           tags$div(icon("comments"), style = "color: #3498DB;")
         )
       ),
