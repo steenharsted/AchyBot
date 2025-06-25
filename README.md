@@ -1,22 +1,41 @@
+<!-- top-of-readme logo -->
+<p align="center">
+  <img src="www/logo.png" alt="AchyBot logo" width="160"/>
+</p>
+
 # AchyBot
 
-**AchyBot** is a chatbot designed to simulate patients with musculoskeletal health issues. It serves as an educational tool for students, providing a realistic and interactive way to practice clinical reasoning, patient communication, and diagnostic skills in a safe learning environment.
+**AchyBot** is an R/Shiny chatbot that simulates patients with musculoskeletal conditions. It’s an interactive learning tool for clinical reasoning, patient communication, and diagnostic practice.
+
+<!-- badges: start -->
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/steenharsted/AchyBot.svg)](https://github.com/steenharsted/AchyBot/commits/master)
+<!-- badges: end -->
+
+<br>
 
 ## Try AchyBot
-Simple first try
-https://fc0dvk-steen-harsted.shinyapps.io/shiny_chat/
 
-## Features
-- Simulates various musculoskeletal conditions. TODO - now only simulates stenosis
-- Supports interactive question-and-answer scenarios.
-- Designed for educational purposes in clinical biomechanics and healthcare training.
+**Danish Version** (most developed, current repository)
+🔗 https://shinylab.sdu.dk/AchyBot/  
 
-## Requirements
-- R (version 4.0 or higher)
-- Shiny
-- bslib
+**English Version** 
+🔗 https://https://shinylab.sdu.dk/AchyBot_eng/
 
-## Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/steenharsted/AchyBot.git
+<br>
+  
+## Key Features
+
+- Supports multiple musculoskeletal conditions 
+- Interactive Q&A for enhanced clinical reasoning practice
+- Ideal for chiropractic students and health‑care training
+
+<br>
+
+## 💾 Installation
+
+```bash
+git clone https://github.com/steenharsted/AchyBot.git
+cd AchyBot
+Rscript -e "shiny::runApp()"
+```
