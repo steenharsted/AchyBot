@@ -1,0 +1,139 @@
+/* Core styling */
+      body { background-color: #5b99b6; }
+      
+      .card {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+        border: none;
+      }
+      
+      .card:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+      
+      .card-header {
+        border-bottom: 2px solid rgba(44, 62, 80, 0.1);
+        background-color: white;
+        padding: 1rem 1.5rem;
+      }
+      
+      .card-body { padding: 1.5rem; }
+      
+      /* Font utilities */
+      .small-font { font-size: 0.85rem !important; }
+      .tiny-font { font-size: 0.75rem !important; }
+      
+      .small-font .selectize-input,
+      .small-font .selectize-dropdown,
+      .small-font label,
+      .small-font .btn,
+      .tiny-font .selectize-input,
+      .tiny-font .selectize-dropdown,
+      .tiny-font label {
+        font-size: inherit !important;
+      }
+      
+      /* App header styling */
+      .app-title {
+        color: #0d1f29;
+        padding: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .app-title h1 {
+        margin: 0;
+        font-weight: 700;
+        margin-left: 10px;
+      }
+      
+      /* Button styling */
+      .btn-primary {
+        font-weight: 600;
+        padding: 0.6rem 1.5rem;
+        border-radius: 50px;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      }
+      
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      
+      /* Chat message styling */
+      .chat-message-user {
+        background-color: #e9f5fd;
+        border-radius: 18px 18px 0 18px;
+        padding: 12px 15px;
+        margin-bottom: 15px;
+        border-left: 4px solid #3498db;
+      }
+      
+      .chat-message-bot {
+        background-color: #f8f9fa;
+        border-radius: 18px 18px 18px 0;
+        padding: 12px 15px;
+        margin-bottom: 15px;
+        border-left: 4px solid #18BC9C;
+      }
+      
+      /* Target multiple possible selectors for the assistant image */
+     .chat-message-assistant img, 
+     .chat-assistant-message img,
+     .chat-message-bot img,
+     .shiny-chat-assistant img,
+     .shiny-chat-container [data-role='assistant'] img {
+        height: 40px !important;
+        width: auto !important;
+        object-fit: contain !important;
+      }
+      
+      /* Prompt preview styling */
+      .prompt-preview {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 0.25rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        max-height: 200px;
+        overflow-y: auto;
+      }
+      
+      /* Task list styling */
+      .task-list {
+        padding-left: 0;
+        list-style: none;
+      }
+      
+      .task-list li {
+        position: relative;
+        padding-left: 30px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+      
+      .task-list li:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 4px;
+        width: 18px;
+        height: 18px;
+        background-color: #0d1f29;
+        border-radius: 50%;
+        opacity: 0.8;
+      }
+      
+      .task-list li:after {
+        content: '✓';
+        position: absolute;
+        left: 4px;
+        top: 1px;
+        color: white;
+        font-size: 12px;
+      }
