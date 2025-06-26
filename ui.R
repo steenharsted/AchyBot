@@ -88,6 +88,20 @@ ui <- page_fluid(
   ## Add selector pane if dev mode
   uiOutput("dev_selector_ui"),
   
+  ## Add prompt pane if in dev mode
+  conditionalPanel(
+    condition = "output.is_dev_mode",
+    layout_column_wrap(
+      width = "800px",
+      card(
+        card_header("🔍 Prompt Preview"),
+        card_body(
+          verbatimTextOutput("prompt_preview")
+        )
+      )
+    )
+  ),
+  
   
   
   # Chat UI

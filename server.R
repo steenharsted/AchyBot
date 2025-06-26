@@ -99,6 +99,29 @@ server <- function(input, output, session) {
     }
   })
   
+  output$is_dev_mode <- reactive({
+    dev_mode()
+  })
+  outputOptions(output, "is_dev_mode", suspendWhenHidden = FALSE)
+  
+  new_prompt_reactive <- reactive({
+    req(dev_mode())
+    req(selected_prompts()$start())
+    req(selected_prompts()$person())
+    req(selected_prompts()$diagnosis())
+    
+    generate_prompt_text_dev(
+      start_choice = selected_prompts()$start(),
+      person_choice = selected_prompts()$person(),
+      diagnosis_choice = selected_prompts()$diagnosis()
+    )
+  })
+  
+  output$prompt_preview <- renderText({
+    new_prompt_reactive()
+  })
+  
+  
   
   # Update chat when start button is clicked
   observeEvent({
