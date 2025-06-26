@@ -26,6 +26,15 @@ ui <- page_fluid(
     style = "text-align: center;"
   ),
   
+  # Add Developer badge (only in dev mode)
+  if (is_dev_mode()) {
+    div(
+      "🚧 Developer Mode",
+      style = "color: white; background-color: red; padding: 6px; border-radius: 4px; font-weight: bold; text-align: center; margin-bottom: 10px;"
+    )
+  },
+  
+  
   
   layout_column_wrap(
     width = "800px",
@@ -78,66 +87,22 @@ ui <- page_fluid(
           )
         )
       )
-    ), 
-    
-    # # Control panel card
-    # card(
-    #   max_height = "600px",
-    #   card_header(
-    #     div(
-    #       style = "display: flex; justify-content: space-between; align-items: center;",
-    #       tags$div("Configuration Panel", style = "font-weight: 600; color: #2C3E50;"),
-    #       tags$div(icon("sliders"), style = "color: #3498DB;")
-    #     )
-    #   ),
-    #   card_body(
-    #     div(
-    #       style = "background-color: white; border-radius: 0.5rem; padding: 1rem;",
-    #       layout_column_wrap(
-    #         width = 1/5,
-    #         tags$div(
-    #           selectInput("start_prompt", "Initial Scenario:",
-    #                       choices = start_prompts,
-    #                       selected = start_prompts[1]),
-    #           class = "tiny-font"
-    #         ),
-    #         tags$div(
-    #           selectInput("person_prompt", "Patient Personality:",
-    #                       choices = person_prompts,
-    #                       selected = person_prompts[3]),
-    #           class = "tiny-font"
-    #         ),
-    #         tags$div(
-    #           selectInput("diagnosis_prompt", "Clinical Condition:",
-    #                       choices = diagnosis_prompts,
-    #                       selected = diagnosis_prompts[6]),
-    #           class = "tiny-font"
-    #         ),
-    #         tags$div(
-    #           selectInput("model", "AI Model:",
-    #                       choices = c("gpt-4o", "gpt-4o-mini", "o3-mini-2025-01-31"),
-    #                       selected = "gpt-4o"),
-    #           class = "tiny-font"
-    #         ),
-    #         tags$div(
-    #           selectInput("feedback_prompt", "Feedback Mode:",
-    #                       choices = c(feedback_prompts),
-    #                       selected = feedback_prompts[1]),
-    #           class = "tiny-font"
-    #         )
-    #       ),
-    #       tags$div(
-    #         actionButton(
-    #           "update_chat", 
-    #           "Press here before you write in the chat the first time",
-    #           class = "btn-primary mt-3",
-    #           style = "width: 100%; background: linear-gradient(135deg, #18BC9C 0%, #3498DB 100%); border: none;"
-    #         )
-    #       )
-    #   )
-    # )
-    #)
+    )
   ),
+  
+  ## Add selector pane if dev mode
+  if (is_dev_mode()) {
+    layout_column_wrap(
+      width = "800px",
+      mod_prompt_selector_ui(
+        id = "prompt_ui",
+        start_prompts = start_prompts,
+        person_prompts = person_prompts,
+        diagnosis_prompts = diagnosis_prompts
+      )
+    )
+  },
+  
   
   # Chat UI
   layout_column_wrap(
