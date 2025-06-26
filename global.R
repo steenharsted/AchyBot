@@ -9,11 +9,6 @@ library(fontawesome)
 library(shinybusy)
 library(stringr)
 
-# Set devmode 
-dev_mode <- reactiveVal(FALSE)  # default = user mode
-
-
-
 
 # List files
 start_prompts <- list.files(here("prompts", "start"), pattern = ".md$", recursive = TRUE) 

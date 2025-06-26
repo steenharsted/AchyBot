@@ -1,7 +1,7 @@
 server <- function(input, output, session) {
   
   # Define the reactive flag
-  dev_mode <- reactiveVal(TRUE)  
+  dev_mode <- reactiveVal(FALSE)  
   
   # Define selected prompts
   selected_prompts <- reactive({
