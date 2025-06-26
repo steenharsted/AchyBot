@@ -3,6 +3,8 @@
 .RData
 .Renviron
 deploy-shiny.ps1
+rsconnect/
+help_developer/
 
 ".Rproj.user/" 
 ".Renviron" 
