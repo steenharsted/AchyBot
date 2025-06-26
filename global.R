@@ -1,3 +1,4 @@
+# libaries
 library(shiny)
 library(shinychat)
 library(bslib)
@@ -26,12 +27,3 @@ generate_prompt_text <- function(){
     "{ellmer::interpolate_file(diagnosis_path)} "
   )
 } 
-
-
-# Source the ui and the server files
-# This will create the ui object and the server function
-source("ui.R")
-source("server.R")
-
-
-shinyApp(ui = ui, server = server)
