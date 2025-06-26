@@ -1,18 +1,24 @@
 server <- function(input, output, session) {
   
+  # Define the reactive flag
+  dev_mode <- reactiveVal(TRUE)  
+  
   # Define selected prompts
-  selected_prompts <- if (is_dev_mode()) {
-    mod_prompt_selector_server("prompt_ui")
-  } else {
-    list(
-      start = reactive(sample(start_prompts, 1)),
-      person = reactive(sample(person_prompts, 1)),
-      diagnosis = reactive(sample(diagnosis_prompts, 1)),
-      model = reactive("gpt-4o-mini"),
-      feedback = reactive(NULL),
-      update_trigger = reactive(input$start_chat)
-    )
-  }
+  selected_prompts <- reactive({
+    if (dev_mode()) {
+      mod_prompt_selector_server("prompt_ui")
+    } else {
+      list(
+        start = reactive(sample(start_prompts, 1)),
+        person = reactive(sample(person_prompts, 1)),
+        diagnosis = reactive(sample(diagnosis_prompts, 1)),
+        model = reactive("gpt-4o-mini"),
+        feedback = reactive(NULL),
+        update_trigger = reactive(input$start_chat)
+      )
+    }
+  })
+  
   
   
   # Reactive values to store the current chat instance
@@ -20,40 +26,91 @@ server <- function(input, output, session) {
   
   # Initialize chat when app starts
   observe({
-
+    req(is.null(rv$chat))  # only initialize if chat is NULL
     
-    isolate({
-      if (is.null(rv$chat)) {
-        new_prompt <- if (is_dev_mode()) {
-          generate_prompt_text_dev(
-            start_choice = selected_prompts$start(),
-            person_choice = selected_prompts$person(),
-            diagnosis_choice = selected_prompts$diagnosis()
-          )
-        } else {
-          generate_prompt_text()
-        }
-        
-        rv$chat <- ellmer::chat_openai(
-          model = selected_prompts$model(),
-          system_prompt = new_prompt
+    if (dev_mode()) {
+      req(
+        selected_prompts(),
+        selected_prompts()$start(),
+        selected_prompts()$person(),
+        selected_prompts()$diagnosis(),
+        selected_prompts()$model()
+      )
+      
+      new_prompt <- generate_prompt_text_dev(
+        start_choice = selected_prompts()$start(),
+        person_choice = selected_prompts()$person(),
+        diagnosis_choice = selected_prompts()$diagnosis()
+      )
+      
+      rv$chat <- ellmer::chat_openai(
+        model = selected_prompts()$model(),
+        system_prompt = new_prompt
+      )
+    } else {
+      new_prompt <- generate_prompt_text()
+      
+      rv$chat <- ellmer::chat_openai(
+        model = "gpt-4o-mini",
+        system_prompt = new_prompt
+      )
+    }
+  })
+  
+  # Toggle dev mode on/off
+
+  
+  # Toggle mode when button is clicked
+  observeEvent(input$toggle_dev_mode, {
+    dev_mode(!dev_mode())
+  })
+  
+  # Dynamically render the dev/user banner + toggle button
+  output$dev_mode_banner <- renderUI({
+    if (dev_mode()) {
+      div(
+        style = "text-align: center;",
+        actionButton("toggle_dev_mode", "🔁 Skift til Bruger-tilstand", class = "btn-warning mb-2"),
+        div("🚧 Developer Mode", style = "color: white; background-color: red; padding: 6px; border-radius: 4px; font-weight: bold; text-align: center;")
+      )
+    } else {
+      div(
+        style = "text-align: center;",
+        actionButton("toggle_dev_mode", "🛠 Skift til Udviklertilstand", class = "btn-primary mb-2")
+      )
+    }
+  })
+  
+  
+  # Show selector pane if in dev mode
+  output$dev_selector_ui <- renderUI({
+    if (dev_mode()) {
+      layout_column_wrap(
+        width = "800px",
+        mod_prompt_selector_ui(
+          id = "prompt_ui",
+          start_prompts = start_prompts,
+          person_prompts = person_prompts,
+          diagnosis_prompts = diagnosis_prompts
         )
-      }
-    })
+      )
+    } else {
+      NULL  # Do not show anything in non-dev mode
+    }
   })
   
   
   # Update chat when start button is clicked
   observeEvent({
-    if (is_dev_mode()) selected_prompts$update_trigger()
+    if (dev_mode()) selected_prompts()$update_trigger()
     else input$start_chat
   }, {
     # Generate a new prompt for a new case
-    if (is_dev_mode()) {
+    if (dev_mode()) {
       new_prompt <- generate_prompt_text_dev(
-        start_choice = selected_prompts$start(),
-        person_choice = selected_prompts$person(),
-        diagnosis_choice = selected_prompts$diagnosis()
+        start_choice = selected_prompts()$start(),
+        person_choice = selected_prompts()$person(),
+        diagnosis_choice = selected_prompts()$diagnosis()
       )
     } else {
       new_prompt <- generate_prompt_text()

@@ -26,14 +26,9 @@ ui <- page_fluid(
     style = "text-align: center;"
   ),
   
-  # Add Developer badge (only in dev mode)
-  if (is_dev_mode()) {
-    div(
-      "🚧 Developer Mode",
-      style = "color: white; background-color: red; padding: 6px; border-radius: 4px; font-weight: bold; text-align: center; margin-bottom: 10px;"
-    )
-  },
   
+  # Somewhere in your page_fluid(...)
+  uiOutput("dev_mode_banner"),
   
   
   layout_column_wrap(
@@ -91,17 +86,8 @@ ui <- page_fluid(
   ),
   
   ## Add selector pane if dev mode
-  if (is_dev_mode()) {
-    layout_column_wrap(
-      width = "800px",
-      mod_prompt_selector_ui(
-        id = "prompt_ui",
-        start_prompts = start_prompts,
-        person_prompts = person_prompts,
-        diagnosis_prompts = diagnosis_prompts
-      )
-    )
-  },
+  uiOutput("dev_selector_ui"),
+  
   
   
   # Chat UI

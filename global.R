@@ -9,9 +9,9 @@ library(fontawesome)
 library(shinybusy)
 library(stringr)
 
-# Set devmode if interactive
-if (interactive()) Sys.setenv(DEV_MODE = "TRUE")
-is_dev_mode <- function() Sys.getenv("DEV_MODE", unset = "FALSE") == "TRUE"
+# Set devmode 
+dev_mode <- reactiveVal(FALSE)  # default = user mode
+
 
 
 
