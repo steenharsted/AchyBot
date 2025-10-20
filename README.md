@@ -16,7 +16,7 @@
 
 ## Try AchyBot
 
-**Danish Version** (most developed, current repository)
+**Danish Version** 
 🔗 https://shinylab.sdu.dk/AchyBot/  
 
 **English Version** 
@@ -28,7 +28,7 @@
 
 - Supports multiple musculoskeletal conditions 
 - Interactive Q&A for enhanced clinical reasoning practice
-- Ideal for chiropractic students and health‑care training
+- Ideal for health‑care training of students with a focus on musculoskeletal health care. 
 
 <br>
 
