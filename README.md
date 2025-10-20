@@ -20,7 +20,8 @@
 🔗 https://shinylab.sdu.dk/AchyBot/  
 
 **English Version** 
-🔗 https://https://shinylab.sdu.dk/AchyBot_eng/
+🔗 https://shinylab.sdu.dk/AchyBot_eng/
+
 
 <br>
   
