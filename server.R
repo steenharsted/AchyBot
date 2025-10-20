@@ -70,13 +70,13 @@ server <- function(input, output, session) {
     if (dev_mode()) {
       div(
         style = "text-align: center;",
-        actionButton("toggle_dev_mode", "🔁 Skift til Bruger-tilstand", class = "btn-warning mb-2"),
+        actionButton("toggle_dev_mode", "🔁 Change to User mode", class = "btn-warning mb-2"),
         div("🚧 Developer Mode", style = "color: white; background-color: red; padding: 6px; border-radius: 4px; font-weight: bold; text-align: center;")
       )
     } else {
       div(
         style = "text-align: center;",
-        actionButton("toggle_dev_mode", "🛠 Skift til Udviklertilstand", class = "btn-primary mb-2")
+        actionButton("toggle_dev_mode", "🛠 Change to Developer mode", class = "btn-primary mb-2")
       )
     }
   })

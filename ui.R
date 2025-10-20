@@ -36,7 +36,7 @@ ui <- page_fluid(
     # Welcome card
     card(
       card_header(
-        h4("Velkommen til AchyBot", style = "color: #2C3E50; margin-bottom: 0;"), 
+        h4("Welcome to AchyBot", style = "color: #2C3E50; margin-bottom: 0;"), 
         div(
           p(
             tags$i("Created by Steen Flammild Harsted, Henrik Hein Lauridsen & Søren O'Neill"),
@@ -49,35 +49,35 @@ ui <- page_fluid(
         )
       ),
       card_body(
-        p("AchyBot er et redskab tilegnet kiropraktorstuderende, der ønsker at træne anamneseoptagelse og diagnostisk tankegang.",
+        p("AchyBot is a tool designed for chiropractic students who want to practice taking patient histories and developing diagnostic reasoning.",
           
           style = "font-size: 1.05rem; color: #2C3E50;"
         ),
         hr(),
-        p("Du står overfor en ny patient i din kiropraktiske klinik. Patienten har fået en diagnose og en personlighed, der afspejler en patient, du vil kunne møde i klinisk praksis."),
-        p("Håndter patienten som du ville gøre i praksis. Husk at man I praksis har begrænset tid til anamnese og objektive undersøgelser. Det er ikke muligt at lave parakliniske undersøgelser."),
-        
+        p("You are facing a new patient in your chiropractic clinic. The patient has been assigned a diagnosis and a personality that reflects someone you might encounter in clinical practice."),
+        p("Manage the patient as you would in real life. Remember that in practice, time for history taking and physical examination is limited. Paraclinical tests are not available."),
         
         p(
-          strong("Dine opgaver er:"), style = "font-size: 1.1rem; color: #2C3E50; margin-bottom: 0.5rem;"
+          strong("Your tasks are:"), style = "font-size: 1.1rem; color: #2C3E50; margin-bottom: 0.5rem;"
         ),
         
         
         tags$ul(
           class = "task-list",
-          tags$li("Optag en fokuseret anamnese"),
-          tags$li("Når du vil udføre objektive undersøgelser, skriver du f.eks. 'Jeg laver SBT'. Der vil komme de objektive fund, som du finder i undersøgelsen."),
-          tags$li("Når du er kommet frem til diagnosen, så skriver du: 'Diagnosen er xx..'"),
-          tags$li("Når du har fundet frem til den rigtige diagnose, skal du genindlæse siden for at starte en ny case.")
+          tags$li("Conduct a focused patient history"),
+          tags$li("When you want to perform physical examinations, write e.g., 'I perform SBT'. You will then receive the objective findings corresponding to that examination."),
+          tags$li("When you have reached a diagnosis, write: 'The diagnosis is xx..'"),
+          tags$li("Once you have identified the correct diagnosis, reload the page to start a new case.")
         ),
+        
         br(),
         div(
           style = "background-color: #e8f4f8; border-left: 4px solid #3498db; padding: 1rem; border-radius: 4px;",
           p(
             icon("info-circle"), " ", 
-            em("Du starter konsultationen ved at præsentere dig selv, f.eks."), 
+            em("You begin the consultation by introducing yourself, for example:"), 
             br(),
-            em("'Hej, jeg hedder xx og jeg er din behandler i dag, hvad er dit navn og cpr?'"),
+            em("'Hi, my name is xx and I’ll be your clinician today. What is your name and patient identification number?'"),
             style = "margin-bottom: 0; color: #2C3E50;"
           )
         )
@@ -112,14 +112,14 @@ ui <- page_fluid(
       card_header(
         div(
           style = "display: flex; justify-content: space-between; align-items: center;",
-          tags$div("Patient Konsultation", style = "font-weight: 600; color: #2C3E50;"),
+          tags$div("Patient Consultation", style = "font-weight: 600; color: #2C3E50;"),
           tags$div(icon("comments"), style = "color: #3498DB;")
         )
       ),
       card_body(
         style = "padding: 0;",
         chat_ui("chat", 
-                placeholder = "Patienten sidder foran dig...", 
+                placeholder = "The patient sits in front of you...", 
                 assistant_img = "logo.png"
         )
       )
